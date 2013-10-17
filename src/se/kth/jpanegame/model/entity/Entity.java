@@ -1,4 +1,7 @@
-package se.kth.jpanegame;
+package se.kth.jpanegame.model.entity;
+
+import se.kth.jpanegame.Renderable;
+import se.kth.jpanegame.Vector2f;
 
 import java.awt.*;
 
@@ -9,7 +12,7 @@ import java.awt.*;
  * Time: 20:34
  * To change this template use File | Settings | File Templates.
  */
-public abstract class Entity implements Renderable
+public abstract class Entity
 {
     private Vector2f position;
     private float width;

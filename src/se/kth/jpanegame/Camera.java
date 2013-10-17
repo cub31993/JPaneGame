@@ -1,5 +1,7 @@
 package se.kth.jpanegame;
 
+import se.kth.jpanegame.model.entity.Entity;
+
 import java.util.ArrayList;
 
 /**

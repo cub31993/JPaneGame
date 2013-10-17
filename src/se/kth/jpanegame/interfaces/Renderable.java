@@ -1,4 +1,4 @@
-package se.kth.jpanegame;
+package se.kth.jpanegame.interfaces;
 
 import java.awt.*;
 

@@ -1,4 +1,7 @@
-package se.kth.jpanegame;
+package se.kth.jpanegame.model.entity;
+
+import se.kth.jpanegame.Vector2f;
+import se.kth.jpanegame.model.entity.Entity;
 
 import java.awt.*;
 
@@ -18,7 +21,6 @@ public class Box extends Entity
         this.getRectangle().setBounds((int)position.getX(), (int)position.getY(), (int)width, (int)height);
     }
 
-    @Override
     public void render(Graphics g)
     {
         g.setColor(Color.black);
