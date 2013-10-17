@@ -4,6 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionListener;
 
 /**
  * Created with IntelliJ IDEA.
@@ -12,7 +14,7 @@ import java.awt.event.ActionListener;
  * Time: 20:18
  * To change this template use File | Settings | File Templates.
  */
-public class Window extends JPanel implements ActionListener
+public class Window extends JPanel implements ActionListener, MouseMotionListener
 {
     private JFrame frame;
     private World world;
@@ -33,6 +35,7 @@ public class Window extends JPanel implements ActionListener
 
         this.world = world;
         this.camera = new Camera();
+        this.addMouseMotionListener(this);
     }
 
 
@@ -47,9 +50,8 @@ public class Window extends JPanel implements ActionListener
     @Override
     public void actionPerformed(ActionEvent actionEvent)
     {
-         this.camera.setPosition(this.camera.getX()+1, this.camera.getY());
-         this.camera.updateView(this.world.getEntities());
-         repaint();
+
+        // repaint();
     }
 
     public void paintComponent(Graphics g)
@@ -60,5 +62,18 @@ public class Window extends JPanel implements ActionListener
         {
             this.world.getEntity(i).render(g);
         }
+    }
+
+    @Override
+    public void mouseDragged(MouseEvent mouseEvent) {
+        //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    @Override
+    public void mouseMoved(MouseEvent mouseEvent) {
+        //To change body of implemented methods use File | Settings | File Templates.
+        this.camera.setPosition(this.camera.getX()+(mouseEvent.getX()-400)/40, this.camera.getY()+(mouseEvent.getY()-300)/40);
+        this.camera.updateView(this.world.getEntities());
+        repaint();
     }
 }

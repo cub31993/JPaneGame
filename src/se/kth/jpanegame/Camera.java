@@ -55,10 +55,11 @@ public class Camera
 
     public void updateView(ArrayList<Entity> renderList)
     {
+        int diff_x = this.prev_x - this.x;
+        int diff_y = this.prev_y - this.y;
+
         for(Entity entity:renderList)
         {
-            int diff_x = this.prev_x - this.x;
-            int diff_y = this.prev_y - this.y;
             entity.setPosition(entity.getPosition().getX()+diff_x, entity.getPosition().getY()+diff_y);
         }
     }
