@@ -28,6 +28,8 @@ public class Game
             }
         }
 
+        world.addPlayer(new Player(new Vector2f(30,30), 20, 50, 2));
+
         return world;
     }
 }

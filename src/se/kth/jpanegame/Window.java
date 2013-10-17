@@ -20,6 +20,7 @@ public class Window extends JPanel implements ActionListener, MouseMotionListene
     private World world;
     private Timer timer;
     private Camera camera;
+    private PlayerController playerController;
 
     public Window(int width, int height, String name, World world)
     {
@@ -34,8 +35,11 @@ public class Window extends JPanel implements ActionListener, MouseMotionListene
         this.frame.setVisible(true);
 
         this.world = world;
-        this.camera = new Camera();
+        this.playerController = new PlayerController(this.world.getPlayer());
+        this.camera = new Camera(this.world.getPlayer());
         this.addMouseMotionListener(this);
+        this.addKeyListener(this.playerController);
+        this.setFocusable(true);
     }
 
 
@@ -50,7 +54,9 @@ public class Window extends JPanel implements ActionListener, MouseMotionListene
     @Override
     public void actionPerformed(ActionEvent actionEvent)
     {
-
+        //this.camera.setPosition(this.world.getPlayer().getPosition());
+        this.camera.updateView(this.world.getEntities());
+        repaint();
         // repaint();
     }
 
@@ -72,8 +78,7 @@ public class Window extends JPanel implements ActionListener, MouseMotionListene
     @Override
     public void mouseMoved(MouseEvent mouseEvent) {
         //To change body of implemented methods use File | Settings | File Templates.
-        this.camera.setPosition(this.camera.getX()+(mouseEvent.getX()-400)/40, this.camera.getY()+(mouseEvent.getY()-300)/40);
-        this.camera.updateView(this.world.getEntities());
-        repaint();
+        //this.camera.setPosition(this.camera.getX()+(mouseEvent.getX()-400)/40, this.camera.getY()+(mouseEvent.getY()-300)/40);
+
     }
 }

@@ -11,7 +11,8 @@ import java.util.ArrayList;
  */
 public class World
 {
-    ArrayList<Entity> entities;
+    private ArrayList<Entity> entities;
+    private Player player;
 
     public World()
     {
@@ -21,6 +22,17 @@ public class World
     public void addEntity(Entity entity)
     {
         this.entities.add(entity);
+    }
+
+    public void addPlayer(Player player)
+    {
+        this.player = player;
+        this.entities.add(player);
+    }
+
+    public Player getPlayer()
+    {
+        return this.player;
     }
 
     public ArrayList<Entity> getEntities()

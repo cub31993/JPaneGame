@@ -23,6 +23,6 @@ public class Box extends Entity
     {
         g.setColor(Color.black);
         g.drawRect((int)this.getPosition().getX(), (int)this.getPosition().getY(), (int)this.getWidth(), (int)this.getHeight());
-        System.out.println("Position: "+this.getPosition().toString());
+        //System.out.println("Position: "+this.getPosition().toString());
     }
 }
