@@ -33,8 +33,6 @@ public class GameScreen extends Screen {
 
     public void update() {
        // controller.update();
-
-
     }
 
     public void render(Graphics g) {
@@ -43,10 +41,8 @@ public class GameScreen extends Screen {
         camera.updateView(world.getEntitys());
 
         for(Entity e: world.getEntitys()) {
-            if(e instanceof Player)
-                g.fillRect((int)e.getPosition().getX(), (int)e.getPosition().getY(), e.getWidth(), e.getHeight());
-            else
-                g.fillRect((int)e.getPosition().getX() * 32, (int)e.getPosition().getY() * 32, e.getWidth(), e.getHeight());
+
+            g.fillRect((int)e.getPosition().getX(), (int)e.getPosition().getY(), e.getWidth(), e.getHeight());
         }
 
        // g.drawRect((int) player.getPosition().getX(), (int) player.getPosition().getY(), player.getWidth(), player.getHeight());

@@ -15,6 +15,6 @@ public class Block extends Entity {
     public Block (Vector2f position, int width, int height) {
         super(position, width, height);
         this.createRectange();
-        this.getRectangle().setBounds((int)position.getX(), (int)position.getY(), width, height);
+        this.getRectangle().setBounds((int)position.getX() * width, (int)position.getY() * height, width, height);
     }
 }
