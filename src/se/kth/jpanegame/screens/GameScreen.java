@@ -32,6 +32,7 @@ public class GameScreen extends Screen {
     }
 
     public void update() {
+        player.update();
        // controller.update();
     }
 
@@ -46,5 +47,17 @@ public class GameScreen extends Screen {
         }
 
        // g.drawRect((int) player.getPosition().getX(), (int) player.getPosition().getY(), player.getWidth(), player.getHeight());
+    }
+
+    public PlayerController getController()
+    {
+        return this.controller;
+    }
+
+    public void initController()
+    {
+        this.game.setFocusable(true);
+        this.game.addKeyListener(this.controller);
+        System.out.println("Controller initialised!");
     }
 }

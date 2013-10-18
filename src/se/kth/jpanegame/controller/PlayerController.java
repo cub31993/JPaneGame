@@ -26,7 +26,6 @@ public class PlayerController implements KeyListener
 
     @Override
     public void keyTyped(KeyEvent keyEvent) {
-        System.out.println("Keypressed: "+keyEvent.getKeyChar());
         //To change body of implemented methods use File | Settings | File Templates.
     }
 
@@ -49,7 +48,6 @@ public class PlayerController implements KeyListener
     @Override
     public void keyReleased(KeyEvent keyEvent)
     {
-        System.out.println("Keypressed: "+keyEvent.getKeyChar());
-        this.player.stop();
+
     }
 }

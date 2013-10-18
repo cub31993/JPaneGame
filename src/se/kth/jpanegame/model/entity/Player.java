@@ -22,7 +22,7 @@ public class Player extends PhysicsEntity
     public void moveLeft()
     {
         this.setVelocity(-x_speed, 0);
-        // this.update();
+        //this.update();
     }
 
     public void moveRight()

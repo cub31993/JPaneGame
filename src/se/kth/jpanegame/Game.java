@@ -110,7 +110,12 @@ public class Game extends Canvas implements Runnable {
     public void setScreen (Screen newScreen) {
         if (screen != null) screen.removed();
         screen = newScreen;
-        if (screen != null) screen.init(this);
+        if (screen != null)
+        {
+            screen.init(this);
+            GameScreen tmp_screen = (GameScreen) screen;
+            tmp_screen.initController();
+        }
     }
 
     public static void main(String[] args) {

@@ -50,5 +50,6 @@ public class PhysicsEntity extends Entity
     public void update()
     {
         this.setPosition(this.getPosition().getX()+this.getVelocity().getX(), this.getPosition().getY()+this.getVelocity().getY());
+        this.setVelocity(this.getVelocity().getX()*0.9f, this.getVelocity().getY());
     }
 }
