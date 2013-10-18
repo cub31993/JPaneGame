@@ -2,19 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a175422b-bd69-4059-b58a-b9ce62fc76f1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Block.java" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Block.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/kth/jpanegame/Camera.java" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/Camera.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JPaneGame.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382122674880" ignored="false" />
+    <file path="/Dummy.txt" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382122750178" ignored="false" />
     <file path="/fragment.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382038593610" ignored="false" />
     <file path="/Window.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382033524188" ignored="false" />
     <file path="/Game.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382117739221" ignored="false" />
     <file path="/Renderer.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382034075786" ignored="false" />
     <file path="/SpriteSheet.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382034055132" ignored="false" />
     <file path="/Screen.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382118207397" ignored="false" />
-    <file path="/GameScreen.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382122389274" ignored="false" />
+    <file path="/GameScreen.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382122804645" ignored="false" />
     <file path="/World.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382122330682" ignored="false" />
     <file path="/Entity.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382096333669" ignored="false" />
     <file path="/PlayerController.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382117286657" ignored="false" />
@@ -99,10 +100,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Camera.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Camera.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Camera.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="61" selection-start="1459" selection-end="1459" vertical-scroll-proportion="0.0">
+            <state line="71" column="66" selection-start="1469" selection-end="1469" vertical-scroll-proportion="0.5787172">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -141,10 +142,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Block.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Block.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Block.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="57" selection-start="268" selection-end="268" vertical-scroll-proportion="0.32215744">
+            <state line="13" column="57" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -173,7 +174,7 @@
       <file leaf-file-name="GameScreen.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="89" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0">
+            <state line="30" column="34" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -212,9 +213,9 @@
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/view/WorldRenderer.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Player.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/World.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/Camera.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Block.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/Camera.java" />
       </list>
     </option>
   </component>
@@ -628,7 +629,11 @@
       <created>1382122676888</created>
       <updated>1382122676888</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="comments">
+      <created>1382122752649</created>
+      <updated>1382122752649</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -785,18 +790,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Game.java">
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/Level.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="171" selection-start="2174" selection-end="2174" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/controller/PlayerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="39" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0">
+        <state line="33" column="28" selection-start="722" selection-end="735" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -810,18 +806,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Player.java">
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/controller/PlayerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="42" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
+        <state line="23" column="39" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/Level.java">
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Block.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="28" selection-start="722" selection-end="735" vertical-scroll-proportion="0.0">
+        <state line="13" column="57" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="42" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -835,28 +838,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Camera.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="61" selection-start="1459" selection-end="1459" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="89" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0">
+        <state line="30" column="34" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Block.java">
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="57" selection-start="268" selection-end="268" vertical-scroll-proportion="0.32215744">
-          <folding />
+        <state line="85" column="171" selection-start="2174" selection-end="2174" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Camera.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="66" selection-start="1469" selection-end="1469" vertical-scroll-proportion="0.5787172">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

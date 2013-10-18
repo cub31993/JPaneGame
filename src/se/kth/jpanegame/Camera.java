@@ -68,8 +68,8 @@ public class Camera
     {
         if(chaseObject != null)
         {
-            this.x = (int)chaseObject.getPosition().getX() - 160;
-            this.y = (int)chaseObject.getPosition().getY() - 120;
+            this.x = (int)chaseObject.getPosition().getX() - 480 + 16;
+            this.y = (int)chaseObject.getPosition().getY() - 360 + 32;
         }
 
         int diff_x = this.prev_x - this.x;
