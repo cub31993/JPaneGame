@@ -3,28 +3,53 @@ package se.kth.jpanegame.controller;
 import se.kth.jpanegame.model.World;
 import se.kth.jpanegame.model.entity.Player;
 
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
 /**
  * Created with IntelliJ IDEA.
- * User: Fredrik
+ * User: marek
  * Date: 2013-10-17
- * Time: 21:06
+ * Time: 20:22
  * To change this template use File | Settings | File Templates.
  */
-public class PlayerController {
-
-    public World world;
+public class PlayerController implements KeyListener
+{
+    private World world;
     private Player player;
 
-    public PlayerController(World world) {
+    public PlayerController(World world)
+    {
         this.world = world;
         this.player = world.getPlayer();
     }
 
-    public void update() {
-        processInput();
-        player.update();
+    @Override
+    public void keyTyped(KeyEvent keyEvent) {
+        System.out.println("Keypressed: "+keyEvent.getKeyChar());
+        //To change body of implemented methods use File | Settings | File Templates.
     }
 
-    private void processInput() {
+    @Override
+    public void keyPressed(KeyEvent keyEvent)
+    {
+        System.out.println("Keypressed: " + keyEvent.getKeyChar());
+
+        switch(keyEvent.getKeyChar())
+        {
+            case 'a': case 'A':
+            this.player.moveLeft();
+            break;
+            case 'd':case 'D':
+            this.player.moveRight();
+            break;
+        }
+    }
+
+    @Override
+    public void keyReleased(KeyEvent keyEvent)
+    {
+        System.out.println("Keypressed: "+keyEvent.getKeyChar());
+        this.player.stop();
     }
 }

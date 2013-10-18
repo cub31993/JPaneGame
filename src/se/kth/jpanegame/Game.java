@@ -32,10 +32,6 @@ public class Game extends Canvas implements Runnable {
 
     private boolean running = false;
 
-    public void init() {
-
-    }
-
     public void start() {
         running = true;
         new Thread(this).start();
@@ -48,8 +44,8 @@ public class Game extends Canvas implements Runnable {
     @Override
     public void run() {
         requestFocus();
-        setScreen(new GameScreen());
 
+        setScreen(new GameScreen());
 
         long lastTime = System.nanoTime();
         double unprocessed = 0;
@@ -104,7 +100,9 @@ public class Game extends Canvas implements Runnable {
 
         Graphics g = bs.getDrawGraphics();
         g.drawImage(image, 0, 0, getWidth(), getHeight(), null);
+
         screen.render(g);
+
         g.dispose();
         bs.show();
     }

@@ -1,5 +1,6 @@
 package se.kth.jpanegame.model;
 
+import se.kth.jpanegame.Camera;
 import se.kth.jpanegame.LevelLoader;
 import se.kth.jpanegame.Vector2f;
 import se.kth.jpanegame.model.entity.Block;
@@ -36,6 +37,7 @@ public class World
 
     private void createWorld() {
         level = LevelLoader.loadLevel(0);  // hämtar level 0 dvs x = 0 * 25; y = 0 * 60; från bilden levels.png
-        player = new Player(level.getSpawn(), 32, 64); // skapar spelaren i världen på spawn position angivet i bilden med en gulpixel
+        player = new Player(level.getSpawn(), 32, 64, 2); // skapar spelaren i världen på spawn position angivet i bilden med en gulpixel
+        level.getEntitys().add(player);
     }
 }

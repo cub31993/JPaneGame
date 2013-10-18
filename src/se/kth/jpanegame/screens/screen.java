@@ -15,13 +15,14 @@ import java.util.Random;
 public class Screen {
 
     protected static Random random = new Random();
-    private Game game;
+    protected Game game;
 
     public void removed() {
     }
 
     public final void init(Game Game) {
         this.game = Game;
+        System.out.println("testar");
     }
 
     protected void setScreen(Screen screen) {

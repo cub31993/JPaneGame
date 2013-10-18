@@ -34,6 +34,8 @@ public class Camera
     public Camera(Entity chaseEntity)
     {
         this.chaseObject = chaseEntity;
+        this.x = (int)chaseEntity.getPosition().getX();
+        this.y = (int)chaseEntity.getPosition().getY();
     }
 
     public void setPosition(int x, int y)
@@ -42,7 +44,14 @@ public class Camera
         this.prev_y = this.y;
         this.x = x;
         this.y = y;
-        System.out.println("Position: "+this.x+", "+this.y);
+    }
+
+    public void setPosition(Vector2f position)
+    {
+        this.prev_x = this.x;
+        this.prev_y = this.y;
+        this.x = (int)position.getX();
+        this.y = (int)position.getY();
     }
 
     public int getX()
@@ -57,12 +66,18 @@ public class Camera
 
     public void updateView(ArrayList<Entity> renderList)
     {
+        if(chaseObject != null)
+        {
+            this.x = (int)chaseObject.getPosition().getX() - 160;
+            this.y = (int)chaseObject.getPosition().getY() - 120;
+        }
+
         int diff_x = this.prev_x - this.x;
         int diff_y = this.prev_y - this.y;
 
         for(Entity entity:renderList)
         {
-            entity.setPosition(entity.getPosition().getX()+diff_x, entity.getPosition().getY()+diff_y);
+            entity.setPosition(entity.getPosition().getX() + diff_x, entity.getPosition().getY() + diff_y);
         }
     }
 }
