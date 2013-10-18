@@ -11,7 +11,7 @@ import se.kth.jpanegame.Vector2f;
  */
 public class Player extends Entity {
 
-    public Player(Vector2f position, float width, float height) {
+    public Player(Vector2f position, int width, int height) {
         super(position, width, height);
     }
 

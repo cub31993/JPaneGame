@@ -1,4 +1,4 @@
-package se.kth.jpanegame.model;
+package se.kth.jpanegame;
 
 /**
  * Created with IntelliJ IDEA.
@@ -16,7 +16,7 @@ import javax.imageio.ImageIO;
 public class Assets {
 
     public static BufferedImage bg = scale(load("res/background.png"), 8);
-  //  public static BufferedImage level = load("/levels.png");
+    public static BufferedImage level = load("res/levels.png");
 
 
     public static BufferedImage load(String name) {

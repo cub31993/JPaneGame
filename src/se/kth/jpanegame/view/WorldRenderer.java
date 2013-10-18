@@ -1,6 +1,7 @@
 package se.kth.jpanegame.view;
 
 import se.kth.jpanegame.model.World;
+import se.kth.jpanegame.model.entity.Entity;
 import se.kth.jpanegame.model.entity.Player;
 
 import java.awt.*;
@@ -24,6 +25,8 @@ public class WorldRenderer {
     }
 
     public void render(Graphics g) {
-
+        for(Entity e: world.getEntitys()) {
+            g.fillRect((int)e.getPosition().getX() * 32, (int)e.getPosition().getY() * 32, e.getWidth(), e.getHeight());
+        }
     }
 }

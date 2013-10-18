@@ -14,7 +14,7 @@ import java.awt.*;
  */
 public class Box extends Entity
 {
-    public Box(Vector2f position, float width, float height)
+    public Box(Vector2f position, int width, int height)
     {
         super(position, width, height);
         this.createRectange();

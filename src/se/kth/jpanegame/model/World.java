@@ -1,6 +1,8 @@
 package se.kth.jpanegame.model;
 
+import se.kth.jpanegame.LevelLoader;
 import se.kth.jpanegame.Vector2f;
+import se.kth.jpanegame.model.entity.Block;
 import se.kth.jpanegame.model.entity.Entity;
 import se.kth.jpanegame.model.entity.Player;
 
@@ -17,12 +19,13 @@ public class World
 {
 
     public Player player;
+    public Level level;
     ArrayList<Entity> entities;
 
     public World()
     {
         this.entities = new ArrayList<Entity>();
-        this.player = new Player(new Vector2f(0,0), 1f, 1f);
+        createWorld();
     }
 
     public void addEntity(Entity entity)
@@ -40,7 +43,16 @@ public class World
         return this.entities.get(i);
     }
 
+    public ArrayList<Entity> getEntitys() {
+        return this.level.getEntitys();
+    }
+
     public Player getPlayer() {
         return this.player;
+    }
+
+    private void createWorld() {
+        level = LevelLoader.loadLevel(0);
+        //player = new Player(level.getSpawn());
     }
 }

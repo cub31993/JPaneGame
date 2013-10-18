@@ -1,7 +1,7 @@
 package se.kth.jpanegame.screens;
 
 import se.kth.jpanegame.controller.PlayerController;
-import se.kth.jpanegame.model.Assets;
+import se.kth.jpanegame.Assets;
 import se.kth.jpanegame.model.World;
 import se.kth.jpanegame.view.WorldRenderer;
 

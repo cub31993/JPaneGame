@@ -1,5 +1,11 @@
 package se.kth.jpanegame.model;
 
+import se.kth.jpanegame.Vector2f;
+import se.kth.jpanegame.model.entity.Block;
+import se.kth.jpanegame.model.entity.Entity;
+
+import java.util.ArrayList;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Fredrik
@@ -8,4 +14,23 @@ package se.kth.jpanegame.model;
  * To change this template use File | Settings | File Templates.
  */
 public class Level {
+
+    private int width;
+    private int height;
+    private Vector2f spawnPosition;
+    private ArrayList<Entity> entityList;
+
+    public byte[] blocks;
+
+    public Level() {
+        entityList = new ArrayList<Entity>();
+    }
+
+    public ArrayList<Entity> getEntitys() {
+        return this.entityList;
+    }
+
+    public Vector2f getSpawn() {
+        return spawnPosition;
+    }
 }

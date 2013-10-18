@@ -1,6 +1,5 @@
 package se.kth.jpanegame.model.entity;
 
-import se.kth.jpanegame.Renderable;
 import se.kth.jpanegame.Vector2f;
 
 import java.awt.*;
@@ -15,11 +14,11 @@ import java.awt.*;
 public abstract class Entity
 {
     private Vector2f position;
-    private float width;
-    private float height;
+    private int width;
+    private int height;
     private Rectangle rectangle;
 
-    public Entity(Vector2f position, float width, float height)
+    public Entity(Vector2f position, int width, int height)
     {
         this.position = position;
         this.width = width;
@@ -31,12 +30,12 @@ public abstract class Entity
         return this.position;
     }
 
-    public float getWidth()
+    public int getWidth()
     {
         return this.width;
     }
 
-    public float getHeight()
+    public int getHeight()
     {
         return this.height;
     }
@@ -62,12 +61,12 @@ public abstract class Entity
         this.position.setY(y);
     }
 
-    public void setWidth(float width)
+    public void setWidth(int width)
     {
         this.width = width;
     }
 
-    public void setHeight(float height)
+    public void setHeight(int height)
     {
         this.height = height;
     }

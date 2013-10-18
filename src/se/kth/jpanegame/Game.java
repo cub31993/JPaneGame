@@ -8,7 +8,6 @@ package se.kth.jpanegame;
  * To change this template use File | Settings | File Templates.
  */
 
-import se.kth.jpanegame.model.Assets;
 import se.kth.jpanegame.screens.GameScreen;
 import se.kth.jpanegame.screens.Screen;
 
