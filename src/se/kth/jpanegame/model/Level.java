@@ -33,4 +33,8 @@ public class Level {
     public Vector2f getSpawn() {
         return spawnPosition;
     }
+
+    public void setSpawn(int x, int y) {
+        this.spawnPosition = new Vector2f(x, y);
+    }
 }

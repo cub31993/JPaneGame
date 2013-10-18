@@ -20,27 +20,10 @@ public class World
 
     public Player player;
     public Level level;
-    ArrayList<Entity> entities;
 
     public World()
     {
-        this.entities = new ArrayList<Entity>();
         createWorld();
-    }
-
-    public void addEntity(Entity entity)
-    {
-        this.entities.add(entity);
-    }
-
-    public ArrayList<Entity> getEntities()
-    {
-        return this.entities;
-    }
-
-    public Entity getEntity(int i)
-    {
-        return this.entities.get(i);
     }
 
     public ArrayList<Entity> getEntitys() {
@@ -53,6 +36,6 @@ public class World
 
     private void createWorld() {
         level = LevelLoader.loadLevel(0);
-        //player = new Player(level.getSpawn());
+        player = new Player(level.getSpawn(), 32, 64);
     }
 }

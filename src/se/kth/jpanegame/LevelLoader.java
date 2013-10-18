@@ -26,15 +26,16 @@ public class LevelLoader {
         for (int y = 0; y < h; y++) {
             for (int x = 0; x < w; x++) {
 
-                int col = pixels[x + y * w] & 0xffffff;
+                int pixel = pixels[x + y * w] & 0xffffff;
                 byte block = 0;
 
-                if (col == 0xffffff) block = 0;
-                else if (col == 0x000000) block = 1;
-                System.out.print(block);
+                if(pixel == 0xffffff) block = 0;
+                else if(pixel == 0x000000) block = 1;
+                else if(pixel == 0xB6FF00) {
+                    level.setSpawn(x * 32, y * 32 - 40);  //spelare spawnar lite över marken
+                }
                 blocks[x + y * w] = block;
             }
-            System.out.print("\n");
         }
 
         for (int y = 0; y < h; y++) {

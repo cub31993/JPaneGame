@@ -13,6 +13,7 @@ public class Player extends Entity {
 
     public Player(Vector2f position, int width, int height) {
         super(position, width, height);
+        System.out.println("player init");
     }
 
     public void update() {
