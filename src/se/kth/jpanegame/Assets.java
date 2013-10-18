@@ -15,7 +15,7 @@ import javax.imageio.ImageIO;
 
 public class Assets {
 
-    public static BufferedImage bg = scale(load("res/background.png"), 8);
+    public static BufferedImage bg = scale(load("res/background.png"), 4);
     public static BufferedImage level = load("res/levels.png");
 
 

@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a175422b-bd69-4059-b58a-b9ce62fc76f1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/kth/jpanegame/Assets.java" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/Assets.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/kth/jpanegame/LevelLoader.java" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/LevelLoader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/kth/jpanegame/model/World.java" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/model/World.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JPaneGame.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382103477207" ignored="false" />
+    <file path="/Dummy.txt" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382103706583" ignored="false" />
     <file path="/fragment.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382038593610" ignored="false" />
     <file path="/Window.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382033524188" ignored="false" />
     <file path="/Game.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382042397629" ignored="false" />
@@ -100,7 +99,7 @@
       <file leaf-file-name="Entity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Entity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="26" selection-start="583" selection-end="583" vertical-scroll-proportion="-8.16">
+            <state line="38" column="35" selection-start="732" selection-end="732" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,10 +107,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="World.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="World.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/World.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="134" selection-start="996" selection-end="996" vertical-scroll-proportion="0.7930029">
+            <state line="38" column="134" selection-start="996" selection-end="996" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -128,10 +127,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LevelLoader.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="LevelLoader.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/LevelLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="65" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0">
+            <state line="49" column="0" selection-start="1405" selection-end="1405" vertical-scroll-proportion="0.7521866">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -148,6 +147,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Assets.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Assets.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="36" selection-start="1342" selection-end="1342" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="GameScreen.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -155,6 +163,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Camera.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Camera.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="13" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -181,7 +198,6 @@
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/screens/Screen.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/Renderable.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/Assets.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/Assets.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/Game.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Block.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Entity.java" />
@@ -190,9 +206,10 @@
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/Level.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/view/WorldRenderer.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Player.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/LevelLoader.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/World.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/Assets.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/LevelLoader.java" />
       </list>
     </option>
   </component>
@@ -590,7 +607,11 @@
       <created>1382103479056</created>
       <updated>1382103479056</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="comments">
+      <created>1382103709191</created>
+      <updated>1382103709191</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -661,7 +682,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="ritar ut spelare" />
+    <option name="LAST_COMMIT_MESSAGE" value="comments" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -680,6 +701,7 @@
     <MESSAGE value="removed spritesheet" />
     <MESSAGE value="level.png added" />
     <MESSAGE value="ritar ut spelare" />
+    <MESSAGE value="comments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -703,13 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Assets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="16" selection-start="946" selection-end="946" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0">
@@ -722,13 +737,6 @@
     <entry file="jar://E:/program/jdk/src.zip!/java/awt/image/BufferedImage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="954" column="54" selection-start="39255" selection-end="39255" vertical-scroll-proportion="0.39591077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Camera.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="269" selection-end="269" vertical-scroll-proportion="-0.5116618">
           <folding />
         </state>
       </provider>
@@ -756,30 +764,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/LevelLoader.java">
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Assets.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="65" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/Level.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="28" selection-start="722" selection-end="735" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="26" selection-start="583" selection-end="583" vertical-scroll-proportion="-8.16">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="43" column="36" selection-start="1342" selection-end="1342" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -799,10 +787,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Camera.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="35" selection-start="732" selection-end="732" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/World.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="134" selection-start="996" selection-end="996" vertical-scroll-proportion="0.7930029">
+        <state line="38" column="134" selection-start="996" selection-end="996" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/Level.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="28" selection-start="722" selection-end="735" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/LevelLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="0" selection-start="1405" selection-end="1405" vertical-scroll-proportion="0.7521866">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

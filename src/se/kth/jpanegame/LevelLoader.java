@@ -48,33 +48,6 @@ public class LevelLoader {
             }
         }
 
-
-       /* // Loading the png into a Pixmap
-
-        // creating the backing blocks array
-        Block[][] blocks = new Block[level.getWidth()][level.getHeight()];
-        for (int col = 0; col < level.getWidth(); col++) {
-            for (int row = 0; row < level.getHeight(); row++) {
-                blocks[col][row] = null;
-            }
-        }
-
-
-        for (int row = 0; row < level.getHeight(); row++) {
-            for (int col = 0; col < level.getWidth(); col++) {
-                int pixel = (pixmap.getPixel(col, row) >>> 8) & 0xffffff;
-                int iRow = level.getHeight() - 1 - row;
-                if (pixel == BLOCK) {
-                    // adding a block
-                    blocks[col][iRow] = new Block(new Vector2(col, iRow));
-                } else if (pixel == START_POS) {
-                    level.setSpanPosition(new Vector2(col, iRow));
-                }
-            }
-        }
-
-        // setting the blocks
-        level.setBlocks(blocks);   */
         return level;
     }
 }
