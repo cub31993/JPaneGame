@@ -29,9 +29,9 @@ public class LevelLoader {
                 int pixel = pixels[x + y * w] & 0xffffff;
                 byte block = 0;
 
-                if(pixel == 0xffffff) block = 0;
-                else if(pixel == 0x000000) block = 1;
-                else if(pixel == 0xB6FF00) {
+                if(pixel == 0xffffff) block = 0;   // luft = null
+                else if(pixel == 0x000000) block = 1;  // en del av banan
+                else if(pixel == 0xB6FF00) {    // spawn position
                     level.setSpawn(x * 32, y * 32 - 40);  //spelare spawnar lite över marken
                 }
                 blocks[x + y * w] = block;

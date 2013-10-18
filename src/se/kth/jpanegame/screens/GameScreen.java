@@ -21,9 +21,9 @@ public class GameScreen extends Screen {
     private PlayerController controller;
 
     public GameScreen() {
-        this.world = new World();
-        renderer = new WorldRenderer(world);
-        controller = new PlayerController(world);
+        this.world = new World();  // skapar world
+        renderer = new WorldRenderer(world);   // skapar vår world view
+        controller = new PlayerController(world);    // skapar spelar kontroller
     }
 
     public void update() {
@@ -31,7 +31,7 @@ public class GameScreen extends Screen {
     }
 
     public void render(Graphics g) {
-        g.drawImage(Assets.bg,0,0,null);
-        renderer.render(g);
+        g.drawImage(Assets.bg, 0, 0, null);  // ritar ut GameScreen bakgrund
+        renderer.render(g);   // varje screen har en view som rendrar allt
     }
 }
