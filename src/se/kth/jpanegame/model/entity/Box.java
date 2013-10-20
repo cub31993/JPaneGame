@@ -12,11 +12,11 @@ import java.awt.*;
  * Time: 22:55
  * To change this template use File | Settings | File Templates.
  */
-public class Box extends Entity
+public class Box extends PhysicsEntity
 {
     public Box(Vector2f position, int width, int height)
     {
-        super(position, width, height);
+        super(position, width, height, 0, true);
         this.createRectange();
         this.getRectangle().setBounds((int)position.getX(), (int)position.getY(), (int)width, (int)height);
     }

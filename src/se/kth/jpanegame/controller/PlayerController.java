@@ -42,6 +42,9 @@ public class PlayerController implements KeyListener
             case 'd':case 'D':
             this.player.moveRight();
             break;
+            case 'w':case 'W':
+            this.player.jump();
+            break;
         }
     }
 
