@@ -45,8 +45,9 @@ public class PhysicsWorld
     public void update()
     {
         //updateGravity();
-        checkCollisions();
         updateGravity();
+        checkCollisions();
+        updateAll();
     }
 
     private void updateGravity()
@@ -65,7 +66,7 @@ public class PhysicsWorld
     {
         for(PhysicsEntity pe1: this.entityArrayList)
         {
-            if(pe1.isDynamic())
+            if(pe1.isDynamic() && !pe1.isUpdated())
             {
                 for(PhysicsEntity pe2: this.entityArrayList)
                 {
@@ -98,7 +99,7 @@ public class PhysicsWorld
                         {
                             if((pe1_y2 <= pe2_y1 && pe1_y1 >= pe2_y1) && pe1.getVelocity().getY() > 0)
                             {
-                                pe1.setVelocity(pe1.getVelocity().getX(), 0);
+                                pe1.setVelocity(pe1.getVelocity().getX(), pe1.getVelocity().getY()*-0.1f);
                                 //pe1.setPosition(pe1.getPosition().getX(), pe2_y1-pe1.getHeight());
                                 System.out.println("bottom");
                                 bottom = true;
@@ -113,22 +114,45 @@ public class PhysicsWorld
 
                         if((pe1_x2 >= pe2_x1 && pe1_x1 <= pe2_x1) && ((pe1_y2 <= pe2_y1 && pe1_y1 >= pe2_y2) || ((pe1_y1 > pe2_y1 && pe1_y2 < pe2_y2) && !bottom)))
                         {
-                            pe1.setVelocity(0, pe1.getVelocity().getY());
+                            if(!pe2.isDynamic())
+                                pe1.setVelocity(pe1.getVelocity().getX()*-0.1f, pe1.getVelocity().getY());
+                            else
+                            {
+                                pe1.setVelocity(pe1.getVelocity().getX(), pe1.getVelocity().getY());
+                                pe2.setVelocity(pe2.getVelocity().getX()+pe1.getVelocity().getX(), pe2.getVelocity().getY());
+                                //pe2.setUpdated(true);
+                            }
                             System.out.println("right");
                         }
 
                         if((pe1_x1 <= pe2_x2 && pe1_x2 >= pe2_x2) && (pe1_y2 <= pe2_y1 && pe1_y1 >= pe2_y2))
                         {
-                            pe1.setVelocity(0, pe1.getVelocity().getY());
+                            if(!pe2.isDynamic())
+                                pe1.setVelocity(pe1.getVelocity().getX()*-0.1f, pe1.getVelocity().getY());
+                            else
+                            {
+                                pe1.setVelocity(pe1.getVelocity().getX(), pe1.getVelocity().getY());
+                                pe2.setVelocity(pe2.getVelocity().getX()+pe1.getVelocity().getX(), pe2.getVelocity().getY());
+                                //pe2.setUpdated(true);
+                            }
                             System.out.println("left");
                         }
-
-
                     }
-
-                    //pe1.update();
                 }
-                pe1.update();
+
+                pe1.setUpdated(true);
+            }
+        }
+    }
+
+    private void updateAll()
+    {
+        for(PhysicsEntity pe: this.entityArrayList)
+        {
+            if(pe.isUpdated())
+            {
+                pe.update();
+                pe.setUpdated(false);
             }
         }
     }

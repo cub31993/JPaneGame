@@ -14,7 +14,7 @@ import java.awt.*;
 public class PhysicsEntity extends Entity
 {
     private float mass;
-    private boolean dynamic;
+    private boolean dynamic, updated;
     private Vector2f velocity;
 
     public PhysicsEntity(Vector2f position, int width, int height, float mass, boolean dynamic) {
@@ -22,6 +22,7 @@ public class PhysicsEntity extends Entity
         this.mass = mass;
         this.velocity = new Vector2f(0,0);
         this.dynamic = dynamic;
+        this.updated = true;
     }
 
     public void setVelocity(Vector2f velocity)
@@ -57,6 +58,16 @@ public class PhysicsEntity extends Entity
     public void setDynamic(boolean dynamic)
     {
         this.dynamic = dynamic;
+    }
+
+    public boolean isUpdated()
+    {
+        return this.updated;
+    }
+
+    public void setUpdated(boolean updated)
+    {
+        this.updated = updated;
     }
 
     public void update()
