@@ -14,26 +14,33 @@ import java.awt.*;
 public class Player extends PhysicsEntity
 {
     private final float x_speed = 3.0f;
+    private final float jump_speed = -10.0f;
 
-    public Player(Vector2f position, int width, int height, float mass) {
-        super(position, width, height, mass);
+    public Player(Vector2f position, int width, int height, float mass, boolean dynamic) {
+        super(position, width, height, mass, dynamic);
     }
 
     public void moveLeft()
     {
-        this.setVelocity(-x_speed, 0);
+        this.setVelocity(-x_speed, this.getVelocity().getY());
+        //System.out.println("Playerpos: "+this.getPosition().toString());
         //this.update();
     }
 
     public void moveRight()
     {
-        this.setVelocity(x_speed, 0);
+        this.setVelocity(x_speed, this.getVelocity().getY());
         //this.update();
+    }
+
+    public void jump()
+    {
+        this.setVelocity(this.getVelocity().getX(), jump_speed);
     }
 
     public void stop()
     {
-        this.setVelocity(0, 0);
+        //this.setVelocity(0, 0);
         //this.update();
     }
 }

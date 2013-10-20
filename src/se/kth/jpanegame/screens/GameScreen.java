@@ -3,6 +3,7 @@ package se.kth.jpanegame.screens;
 import se.kth.jpanegame.Camera;
 import se.kth.jpanegame.controller.PlayerController;
 import se.kth.jpanegame.Assets;
+import se.kth.jpanegame.model.PhysicsWorld;
 import se.kth.jpanegame.model.World;
 import se.kth.jpanegame.model.entity.Entity;
 import se.kth.jpanegame.model.entity.Player;
@@ -32,7 +33,7 @@ public class GameScreen extends Screen {
     }
 
     public void update() {
-        player.update();
+        this.world.getPhysicsWorld().update();
        // controller.update();
     }
 

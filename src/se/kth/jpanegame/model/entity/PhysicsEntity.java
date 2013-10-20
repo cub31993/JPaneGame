@@ -14,12 +14,14 @@ import java.awt.*;
 public class PhysicsEntity extends Entity
 {
     private float mass;
+    private boolean dynamic;
     private Vector2f velocity;
 
-    public PhysicsEntity(Vector2f position, int width, int height, float mass) {
+    public PhysicsEntity(Vector2f position, int width, int height, float mass, boolean dynamic) {
         super(position, width, height);
         this.mass = mass;
         this.velocity = new Vector2f(0,0);
+        this.dynamic = dynamic;
     }
 
     public void setVelocity(Vector2f velocity)
@@ -47,9 +49,19 @@ public class PhysicsEntity extends Entity
         return this.mass;
     }
 
+    public boolean isDynamic()
+    {
+        return this.dynamic;
+    }
+
+    public void setDynamic(boolean dynamic)
+    {
+        this.dynamic = dynamic;
+    }
+
     public void update()
     {
-        this.setPosition(this.getPosition().getX()+this.getVelocity().getX(), this.getPosition().getY()+this.getVelocity().getY());
         this.setVelocity(this.getVelocity().getX()*0.9f, this.getVelocity().getY());
+        this.setPosition(this.getPosition().getX()+this.getVelocity().getX(), this.getPosition().getY()+this.getVelocity().getY());
     }
 }
