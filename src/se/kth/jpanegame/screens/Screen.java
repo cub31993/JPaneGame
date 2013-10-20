@@ -1,6 +1,7 @@
 package se.kth.jpanegame.screens;
 
 import se.kth.jpanegame.Game;
+import se.kth.jpanegame.Input;
 
 import java.awt.*;
 import java.util.Random;
@@ -32,6 +33,6 @@ public class Screen {
     public void render(Graphics g) {
     }
 
-    public void update() {
+    public void update(Input input) {
     }
 }

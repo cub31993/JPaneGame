@@ -2,36 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a175422b-bd69-4059-b58a-b9ce62fc76f1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Box.java" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Box.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/PhysicsEntity.java" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/PhysicsEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/kth/jpanegame/model/PhysicsWorld.java" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/model/PhysicsWorld.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/kth/jpanegame/model/World.java" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/model/World.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/model/PhysicsWorld.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JPaneGame.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382258961729" ignored="false" />
+    <file path="/Dummy.txt" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382263253921" ignored="false" />
     <file path="/fragment.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382038593610" ignored="false" />
     <file path="/Window.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382033524188" ignored="false" />
     <file path="/Game.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382124079576" ignored="false" />
     <file path="/Renderer.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382034075786" ignored="false" />
     <file path="/SpriteSheet.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382034055132" ignored="false" />
     <file path="/Screen.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382118207397" ignored="false" />
-    <file path="/GameScreen.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382171215222" ignored="false" />
-    <file path="/World.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382259252374" ignored="false" />
+    <file path="/GameScreen.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382124422218" ignored="false" />
+    <file path="/World.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382122330682" ignored="false" />
     <file path="/Entity.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382096333669" ignored="false" />
-    <file path="/PlayerController.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382218576332" ignored="false" />
-    <file path="/Player.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382220104871" ignored="false" />
+    <file path="/PlayerController.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382117286657" ignored="false" />
+    <file path="/Player.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382121754594" ignored="false" />
     <file path="/WorldRenderer.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382120377713" ignored="false" />
     <file path="/Assets.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382038684660" ignored="false" />
     <file path="/Renderable.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382045887550" ignored="false" />
     <file path="/Level.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382102731526" ignored="false" />
     <file path="/LevelLoader.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382103518806" ignored="false" />
-    <file path="/Block.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382172344144" ignored="false" />
-    <file path="/Box.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382259182544" ignored="false" />
-    <file path="/PhysicsEntity.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382260146323" ignored="false" />
+    <file path="/Block.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382122739930" ignored="false" />
+    <file path="/Box.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382096374717" ignored="false" />
+    <file path="/PhysicsEntity.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382124325455" ignored="false" />
     <file path="/Camera.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382120974017" ignored="false" />
-    <file path="/PhysicsWorld.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382260792873" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,93 +88,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GameScreen.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="26" selection-start="970" selection-end="970" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Box.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Box.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="39" selection-start="876" selection-end="876" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Block.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Block.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="95" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PhysicsWorld.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/PhysicsWorld.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="73" selection-start="4318" selection-end="4318" vertical-scroll-proportion="0.2955665">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PhysicsEntity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/PhysicsEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="27" selection-start="653" selection-end="653" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Player.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="54" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlayerController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/controller/PlayerController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="18" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="World.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/World.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="55" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LevelLoader.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/LevelLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Level.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/Level.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="57" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0">
+            <state line="35" column="84" selection-start="753" selection-end="753" vertical-scroll-proportion="0.8165939">
               <folding />
             </state>
           </provider>
@@ -208,30 +121,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Entity.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Box.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/view/SpriteSheet.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/Level.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/Assets.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/LevelLoader.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/screens/Screen.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/view/WorldRenderer.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/Game.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/Camera.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/World.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Block.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/Game.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/PhysicsEntity.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/controller/PlayerController.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Player.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Box.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/PhysicsEntity.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/PhysicsWorld.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/World.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/Camera.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="-1" />
-    <option name="width" value="1922" />
-    <option name="height" value="1084" />
+    <option name="x" value="-4" />
+    <option name="y" value="-4" />
+    <option name="width" value="1928" />
+    <option name="height" value="1060" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -259,7 +172,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -274,7 +186,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="JPaneGame1" />
+              <option name="myItemId" value="JPaneGame" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -284,7 +196,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="JPaneGame1" />
+              <option name="myItemId" value="JPaneGame" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -302,7 +214,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="JPaneGame1" />
+              <option name="myItemId" value="JPaneGame" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -324,7 +236,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="JPaneGame1" />
+              <option name="myItemId" value="JPaneGame" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -337,81 +249,12 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JPaneGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JPaneGame1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jpanegame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JPaneGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JPaneGame1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jpanegame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interfaces" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JPaneGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JPaneGame1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jpanegame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -426,7 +269,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JPaneGameMarek" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="68" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="710" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="710" />
@@ -648,32 +491,40 @@
       <created>1382124516319</created>
       <updated>1382124516319</updated>
     </task>
-    <task id="LOCAL-00012" summary="Collisions fixed, (still bit buggy).&#10;Created PhysicsWorld.">
-      <created>1382258973632</created>
-      <updated>1382258973632</updated>
+    <task id="LOCAL-00012" summary="Merge remote-tracking branch 'origin/fredrik' into fredrik&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;">
+      <created>1382262347274</created>
+      <updated>1382262347274</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Merge remote-tracking branch 'origin/fredrik' into fredrik&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;">
+      <created>1382262364844</created>
+      <updated>1382262364844</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Merge remote-tracking branch 'origin/fredrik' into fredrik&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;">
+      <created>1382263259058</created>
+      <updated>1382263259058</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-1" width="1922" height="1084" extended-state="6" />
-    <editor active="true" />
+    <frame x="-4" y="-4" width="1928" height="1060" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24148607" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3273305" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24068157" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24068157" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980973" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32838982" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.67230445" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.6726695" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3273305" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24947916" sideWeight="0.7593184" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32817337" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -723,7 +574,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Collisions fixed, (still bit buggy).&#10;Created PhysicsWorld." />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/fredrik' into fredrik&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -744,7 +595,7 @@
     <MESSAGE value="ritar ut spelare" />
     <MESSAGE value="comments" />
     <MESSAGE value="Fixed controller + camera" />
-    <MESSAGE value="Collisions fixed, (still bit buggy).&#10;Created PhysicsWorld." />
+    <MESSAGE value="Merge remote-tracking branch 'origin/fredrik' into fredrik&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -779,7 +630,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Camera.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="66" selection-start="1484" selection-end="1484" vertical-scroll-proportion="0.0">
+        <state line="35" column="5" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -788,28 +639,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="13" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="26" selection-start="970" selection-end="970" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/LevelLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/Level.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="57" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -823,54 +653,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Player.java">
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="54" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/controller/PlayerController.java">
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Camera.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="18" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="71" column="66" selection-start="1484" selection-end="1484" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Box.java">
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Camera.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="39" selection-start="876" selection-end="876" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="35" column="5" selection-start="604" selection-end="604" vertical-scroll-proportion="0.028145695">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Block.java">
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="95" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/World.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="55" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/PhysicsEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="27" selection-start="653" selection-end="653" vertical-scroll-proportion="0.0">
+        <state line="139" column="0" selection-start="3568" selection-end="3568" vertical-scroll-proportion="0.83112586">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/PhysicsWorld.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="73" selection-start="4318" selection-end="4318" vertical-scroll-proportion="0.2955665">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="35" column="84" selection-start="753" selection-end="753" vertical-scroll-proportion="0.8165939">
+          <folding />
         </state>
       </provider>
     </entry>

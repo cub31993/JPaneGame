@@ -1,9 +1,9 @@
 package se.kth.jpanegame.screens;
 
 import se.kth.jpanegame.Camera;
+import se.kth.jpanegame.Input;
 import se.kth.jpanegame.controller.PlayerController;
 import se.kth.jpanegame.Assets;
-import se.kth.jpanegame.model.PhysicsWorld;
 import se.kth.jpanegame.model.World;
 import se.kth.jpanegame.model.entity.Entity;
 import se.kth.jpanegame.model.entity.Player;
@@ -28,13 +28,12 @@ public class GameScreen extends Screen {
         this.world = new World();  // skapar world
         controller = new PlayerController(world);    // skapar spelar kontroller
         player = world.getPlayer();
-        //game.addKeyListener(controller);
         camera = new Camera(player);
     }
 
-    public void update() {
+    public void update(Input input) {
         this.world.getPhysicsWorld().update();
-       // controller.update();
+        controller.update(input);
     }
 
     public void render(Graphics g) {
@@ -57,8 +56,8 @@ public class GameScreen extends Screen {
 
     public void initController()
     {
-        this.game.setFocusable(true);
-        this.game.addKeyListener(this.controller);
+       // this.game.setFocusable(true);
+        //this.game.addKeyListener(this.controller);
         System.out.println("Controller initialised!");
     }
 }

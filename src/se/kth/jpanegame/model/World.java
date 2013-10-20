@@ -45,7 +45,6 @@ public class World
         level.getEntitys().add(player);
         level.getEntitys().add(new Box(new Vector2f(200, 0), 32, 32));
         level.getEntitys().add(new Box(new Vector2f(450, 0), 32, 32));
-        player.setPosition(player.getPosition().getX(), player.getPosition().getY()-100);
 
         for(Entity e: level.getEntitys())
         {
