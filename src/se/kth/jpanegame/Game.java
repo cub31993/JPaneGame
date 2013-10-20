@@ -29,10 +29,13 @@ public class Game extends Canvas implements Runnable {
     private BufferedImage image = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_INT_RGB);
 
     private Screen screen;
+    private Input input;
 
     private boolean running = false;
 
     public void start() {
+        input = new Input();
+        this.addKeyListener(input);
         running = true;
         new Thread(this).start();
     }
@@ -87,7 +90,8 @@ public class Game extends Canvas implements Runnable {
     }
 
     public void update() {
-        screen.update();
+        input.update();
+        screen.update(input);
     }
 
     public void render() {
