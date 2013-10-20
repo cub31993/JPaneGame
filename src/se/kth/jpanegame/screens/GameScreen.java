@@ -27,7 +27,6 @@ public class GameScreen extends Screen {
         this.world = new World();  // skapar world
         controller = new PlayerController(world);    // skapar spelar kontroller
         player = world.getPlayer();
-        //game.addKeyListener(controller);
         camera = new Camera(player);
     }
 
