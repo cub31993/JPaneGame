@@ -143,7 +143,7 @@ public class PhysicsWorld
                                 else
                                 {
                                     System.out.println("Collision on bottom!");
-                                    pe1.setVelocity(pe1.getVelocity().getX(), pe1.getVelocity().getY()*-0.1f);
+                                    pe1.setVelocity(pe1.getVelocity().getX(), 0);
                                     //pe1.setPosition(pe1.getPosition().getX(), pe2.getPosition().getY()-pe1.getHeight());
                                 }
                             }

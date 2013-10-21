@@ -2,8 +2,6 @@ package se.kth.jpanegame.model.entity;
 
 import se.kth.jpanegame.Vector2f;
 
-import java.awt.*;
-
 /**
  * Created with IntelliJ IDEA.
  * User: marek
@@ -15,6 +13,7 @@ public class Player extends PhysicsEntity
 {
     private final float x_speed = 3.0f;
     private final float jump_speed = -10.0f;
+    private boolean can_jump = true;
 
     public Player(Vector2f position, int width, int height, float mass, boolean dynamic) {
         super(position, width, height, mass, dynamic);
@@ -23,24 +22,37 @@ public class Player extends PhysicsEntity
     public void moveLeft()
     {
         this.setVelocity(-x_speed, this.getVelocity().getY());
-        //System.out.println("Playerpos: "+this.getPosition().toString());
-        //this.update();
     }
 
     public void moveRight()
     {
         this.setVelocity(x_speed, this.getVelocity().getY());
-        //this.update();
     }
 
     public void jump()
     {
-        this.setVelocity(this.getVelocity().getX(), jump_speed);
+        if(this.can_jump)
+        {
+            this.setVelocity(this.getVelocity().getX(), jump_speed);
+            this.can_jump = false;
+        }
     }
 
-    public void stop()
+    public boolean canJump()
     {
-        //this.setVelocity(0, 0);
-        //this.update();
+        return this.can_jump;
+    }
+
+    public void setCanJump(boolean jump)
+    {
+        this.can_jump = jump;
+    }
+
+    @Override
+    public void update()
+    {
+        super.update();
+        if(this.getVelocity().getY() == 0)
+            this.can_jump = true;
     }
 }
