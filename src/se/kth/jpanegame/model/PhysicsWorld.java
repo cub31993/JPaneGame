@@ -72,7 +72,7 @@ public class PhysicsWorld
                 {
                     if(pe1 != pe2)
                     {
-                        float pe1_x1 = pe1.getPosition().getX()+pe1.getVelocity().getX();
+                        /*float pe1_x1 = pe1.getPosition().getX()+pe1.getVelocity().getX();
                         float pe1_x2 = pe1_x1 + pe1.getWidth();
                         float pe1_y2 = pe1.getPosition().getY()+pe1.getVelocity().getY();
                         float pe1_y1 = pe1_y2 + pe1.getHeight();
@@ -81,7 +81,7 @@ public class PhysicsWorld
                         float pe2_x1 = pe2.getPosition().getX()+pe2.getVelocity().getX();
                         float pe2_x2 = pe2_x1 + pe2.getWidth();
                         float pe2_y1 = pe2.getPosition().getY()+pe2.getVelocity().getY();
-                        float pe2_y2 = pe2_y1 + pe2.getHeight();
+                        float pe2_y2 = pe2_y1 + pe2.getHeight();*/
 
                         /*System.out.println("p1 x1: "+pe1_x1);
                         System.out.println("p1 x2: "+pe1_x2);
@@ -93,49 +93,60 @@ public class PhysicsWorld
                         System.out.println("p2 y1: "+pe2_y1);
                         System.out.println("p2 y2: "+pe2_y2);*/
 
-                        boolean bottom = false;
+                        float width = 0.5f * (pe1.getWidth()+pe2.getWidth());
+                        float height = 0.5f * (pe1.getHeight()+pe2.getHeight());
+                        float dx =  (pe1.getPosition().getX()+pe1.getVelocity().getX()+(pe1.getWidth()/2)) - (pe2.getPosition().getX()+pe2.getVelocity().getX()+(pe2.getWidth()/2));
+                        float dy = (pe1.getPosition().getY()+pe1.getVelocity().getY()+(pe1.getHeight()/2)) - (pe2.getPosition().getY()+pe2.getVelocity().getY()+(pe2.getHeight()/2));
 
-                        if(pe1_x2 >= pe2_x1 && pe1_x1 <= pe2_x2)
+                        if (Math.abs(dx) <= width && Math.abs(dy) <= height)
                         {
-                            if((pe1_y2 <= pe2_y1 && pe1_y1 >= pe2_y1) && pe1.getVelocity().getY() > 0)
+    /* collision! */
+                            float wy = width * dy;
+                            float hx = height * dx;
+
+                            if (wy > hx)
                             {
-                                pe1.setVelocity(pe1.getVelocity().getX(), pe1.getVelocity().getY()*-0.1f);
-                                //pe1.setPosition(pe1.getPosition().getX(), pe2_y1-pe1.getHeight());
-                                System.out.println("bottom");
-                                bottom = true;
+                                if (wy > -hx)
+                                {
+                                    System.out.println("Collision on top!");
+                                    pe1.setVelocity(0, 0);
+                                }
+                                else
+                                {
+                                    System.out.println("Collision on right!");
+                                    if(!pe2.isDynamic())
+                                    {
+                                        pe1.setVelocity(pe1.getVelocity().getX()*-0.001f, pe1.getVelocity().getY());
+                                    }
+                                    else
+                                    {
+                                        pe2.setVelocity(pe2.getVelocity().getX()+pe1.getVelocity().getX(), pe2.getVelocity().getY());
+                                        pe1.setVelocity(pe1.getVelocity().getX()*-0.001f, pe1.getVelocity().getY());
+                                    }
+                                }
                             }
-                            /*if((pe1_y2 >= pe2_y1 && pe1_y2 <= pe1_y2))
-                            {
-                                //pe1.setPosition(pe1.getPosition().getX(), pe2_y1-pe1.getHeight());
-                                pe1.setVelocity(pe1.getVelocity().getX(), 0);
-                            }*/
-                        }
-
-
-                        if((pe1_x2 >= pe2_x1 && pe1_x1 <= pe2_x1) && ((pe1_y2 <= pe2_y1 && pe1_y1 >= pe2_y2) || ((pe1_y1 > pe2_y1 && pe1_y2 < pe2_y2) && !bottom)))
-                        {
-                            if(!pe2.isDynamic())
-                                pe1.setVelocity(pe1.getVelocity().getX()*-0.1f, pe1.getVelocity().getY());
                             else
                             {
-                                pe1.setVelocity(pe1.getVelocity().getX(), pe1.getVelocity().getY());
-                                pe2.setVelocity(pe2.getVelocity().getX()+pe1.getVelocity().getX(), pe2.getVelocity().getY());
-                                //pe2.setUpdated(true);
+                                if (wy > -hx)
+                                {
+                                    System.out.println("Collision on left!");
+                                    if(!pe2.isDynamic())
+                                    {
+                                        pe1.setVelocity(pe1.getVelocity().getX()*-0.001f, pe1.getVelocity().getY());
+                                    }
+                                    else
+                                    {
+                                        pe2.setVelocity(pe2.getVelocity().getX()+pe1.getVelocity().getX(), pe2.getVelocity().getY());
+                                        pe1.setVelocity(pe1.getVelocity().getX()*-0.001f, pe1.getVelocity().getY());
+                                    }
+                                }
+                                else
+                                {
+                                    System.out.println("Collision on bottom!");
+                                    pe1.setVelocity(pe1.getVelocity().getX(), pe1.getVelocity().getY()*-0.1f);
+                                    //pe1.setPosition(pe1.getPosition().getX(), pe2.getPosition().getY()-pe1.getHeight());
+                                }
                             }
-                            System.out.println("right");
-                        }
-
-                        if((pe1_x1 <= pe2_x2 && pe1_x2 >= pe2_x2) && (pe1_y2 <= pe2_y1 && pe1_y1 >= pe2_y2))
-                        {
-                            if(!pe2.isDynamic())
-                                pe1.setVelocity(pe1.getVelocity().getX()*-0.1f, pe1.getVelocity().getY());
-                            else
-                            {
-                                pe1.setVelocity(pe1.getVelocity().getX(), pe1.getVelocity().getY());
-                                pe2.setVelocity(pe2.getVelocity().getX()+pe1.getVelocity().getX(), pe2.getVelocity().getY());
-                                //pe2.setUpdated(true);
-                            }
-                            System.out.println("left");
                         }
                     }
                 }
