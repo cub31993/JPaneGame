@@ -5,9 +5,6 @@ import se.kth.jpanegame.model.World;
 import se.kth.jpanegame.model.entity.Player;
 
 import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -19,9 +16,9 @@ import java.util.Map;
 public class PlayerController
 {
 
-    enum Keys {
+    /*enum Keys {
         LEFT, RIGHT, UP, DOWN
-    }
+    } */
 
     private World world;
     private Player player;
@@ -44,6 +41,10 @@ public class PlayerController
 
         if(input.isKeyDown(KeyEvent.VK_UP)) {
             this.player.jump();
+        }
+
+        if(input.isKeyPressed(KeyEvent.VK_DOWN)) {
+           this.player.liftAnBox(this.world.getPhysicsWorld().getEntities());
         }
     }
 }

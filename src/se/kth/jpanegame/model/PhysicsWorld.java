@@ -32,6 +32,11 @@ public class PhysicsWorld
         return this.entityArrayList.get(i);
     }
 
+    public ArrayList<PhysicsEntity> getEntities()
+    {
+        return this.entityArrayList;
+    }
+
     public void removeEntity(int i)
     {
         this.entityArrayList.remove(i);
@@ -108,12 +113,12 @@ public class PhysicsWorld
                             {
                                 if (wy > -hx)
                                 {
-                                    System.out.println("Collision on top!");
-                                    pe1.setVelocity(0, 0);
+                                    //System.out.println("Collision on top!");
+                                    pe1.setVelocity(pe1.getVelocity().getX(), 0);
                                 }
                                 else
                                 {
-                                    System.out.println("Collision on right!");
+                                    //System.out.println("Collision on right!");
                                     if(!pe2.isDynamic())
                                     {
                                         pe1.setVelocity(pe1.getVelocity().getX()*-0.001f, pe1.getVelocity().getY());
@@ -129,7 +134,7 @@ public class PhysicsWorld
                             {
                                 if (wy > -hx)
                                 {
-                                    System.out.println("Collision on left!");
+                                    //System.out.println("Collision on left!");
                                     if(!pe2.isDynamic())
                                     {
                                         pe1.setVelocity(pe1.getVelocity().getX()*-0.001f, pe1.getVelocity().getY());
@@ -142,9 +147,9 @@ public class PhysicsWorld
                                 }
                                 else
                                 {
-                                    System.out.println("Collision on bottom!");
+                                    //System.out.println("Collision on bottom!");
                                     pe1.setVelocity(pe1.getVelocity().getX(), 0);
-                                    //pe1.setPosition(pe1.getPosition().getX(), pe2.getPosition().getY()-pe1.getHeight());
+                                    pe1.setPosition(pe1.getPosition().getX(), pe2.getPosition().getY()-pe1.getHeight());
                                 }
                             }
                         }

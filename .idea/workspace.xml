@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a175422b-bd69-4059-b58a-b9ce62fc76f1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/CollisionFilter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Box.java" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Box.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Entity.java" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Entity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/kth/jpanegame/Input.java" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/Input.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/PhysicsEntity.java" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/PhysicsEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/kth/jpanegame/model/PhysicsWorld.java" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/model/PhysicsWorld.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Player.java" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Player.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/kth/jpanegame/controller/PlayerController.java" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/controller/PlayerController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/kth/jpanegame/model/World.java" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/model/World.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JPaneGame.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382341559089" ignored="false" />
+    <file path="/Dummy.txt" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382350766841" ignored="false" />
     <file path="/fragment.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382038593610" ignored="false" />
     <file path="/Window.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382033524188" ignored="false" />
     <file path="/Game.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382124079576" ignored="false" />
@@ -21,19 +24,21 @@
     <file path="/GameScreen.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382350484737" ignored="false" />
     <file path="/World.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382341902185" ignored="false" />
     <file path="/Entity.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382350559510" ignored="false" />
-    <file path="/PlayerController.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382117286657" ignored="false" />
-    <file path="/Player.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382350577141" ignored="false" />
+    <file path="/PlayerController.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382374421174" ignored="false" />
+    <file path="/Player.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382376288932" ignored="false" />
     <file path="/WorldRenderer.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382120377713" ignored="false" />
     <file path="/Assets.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382038684660" ignored="false" />
     <file path="/Renderable.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382045887550" ignored="false" />
     <file path="/Level.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382102731526" ignored="false" />
     <file path="/LevelLoader.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382103518806" ignored="false" />
     <file path="/Block.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382122739930" ignored="false" />
-    <file path="/Box.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382350654568" ignored="false" />
-    <file path="/PhysicsEntity.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382284670284" ignored="false" />
+    <file path="/Box.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382370618187" ignored="false" />
+    <file path="/PhysicsEntity.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382370648621" ignored="false" />
     <file path="/Camera.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382120974017" ignored="false" />
-    <file path="/PhysicsWorld.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382341148002" ignored="false" />
+    <file path="/PhysicsWorld.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382372185163" ignored="false" />
     <file path="/Jumpable.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382341034875" ignored="false" />
+    <file path="/CollisionFilter.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382370502873" ignored="false" />
+    <file path="/Input.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382374400807" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,10 +108,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Box.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Box.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Box.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="39" selection-start="625" selection-end="625" vertical-scroll-proportion="0.44334975">
+            <state line="22" column="51" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,7 +129,7 @@
       <file leaf-file-name="PhysicsWorld.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/PhysicsWorld.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="145" column="79" selection-start="5784" selection-end="5784" vertical-scroll-proportion="0.0">
+            <state line="151" column="36" selection-start="5954" selection-end="5954" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -133,7 +138,36 @@
       <file leaf-file-name="PhysicsEntity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/PhysicsEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="5" selection-start="1648" selection-end="1648" vertical-scroll-proportion="0.0">
+            <state line="78" column="50" selection-start="1588" selection-end="1588" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/controller/PlayerController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="30" selection-start="958" selection-end="958" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Input.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Input.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="30" selection-start="1366" selection-end="1366" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CollisionFilter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/CollisionFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="22" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -142,46 +176,19 @@
       <file leaf-file-name="World.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/World.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="43" selection-start="814" selection-end="814" vertical-scroll-proportion="0.0">
+            <state line="47" column="73" selection-start="1376" selection-end="1376" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Player.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="36" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0">
+            <state line="69" column="160" selection-start="2221" selection-end="2221" vertical-scroll-proportion="0.45812806">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Level.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/Level.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="13" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LevelLoader.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/LevelLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="48" selection-start="640" selection-end="640" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Screen.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/screens/Screen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="13" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -210,22 +217,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/Assets.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/LevelLoader.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/screens/Screen.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/view/WorldRenderer.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Block.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/Game.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/controller/PlayerController.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/Camera.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/PhysicsEntity.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/interfaces/Jumpable.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/PhysicsWorld.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/World.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Entity.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Player.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/CollisionFilter.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Box.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/PhysicsEntity.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/World.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/Input.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/controller/PlayerController.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/PhysicsWorld.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Player.java" />
       </list>
     </option>
   </component>
@@ -386,6 +393,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="interfaces" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JPaneGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JPaneGame1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jpanegame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -662,7 +691,11 @@
       <created>1382341563221</created>
       <updated>1382341563221</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Different colors for different objects.">
+      <created>1382350771151</created>
+      <updated>1382350771151</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -733,7 +766,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="now Jump is only possible when on ground" />
+    <option name="LAST_COMMIT_MESSAGE" value="Different colors for different objects." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -757,6 +790,7 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/fredrik' into fredrik&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;" />
     <MESSAGE value="Fixed box collisions,&#10;Simplified collisions." />
     <MESSAGE value="now Jump is only possible when on ground" />
+    <MESSAGE value="Different colors for different objects." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -766,31 +800,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Camera.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="66" selection-start="1484" selection-end="1484" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Camera.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="5" selection-start="604" selection-end="604" vertical-scroll-proportion="0.028145695">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/background.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -799,27 +808,6 @@
     <entry file="file://$PROJECT_DIR$/res/levels.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/PhysicsWorld.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="79" selection-start="5784" selection-end="5784" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/PhysicsEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="5" selection-start="1648" selection-end="1648" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/World.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="43" selection-start="814" selection-end="814" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/Level.java">
@@ -857,6 +845,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Box.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="51" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="81" column="26" selection-start="1597" selection-end="1597" vertical-scroll-proportion="0.0">
@@ -864,19 +859,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Player.java">
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/CollisionFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="36" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0">
+        <state line="10" column="22" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/World.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="73" selection-start="1376" selection-end="1376" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Input.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="30" selection-start="1366" selection-end="1366" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/PhysicsEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="50" selection-start="1588" selection-end="1588" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/PhysicsWorld.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="151" column="36" selection-start="5954" selection-end="5954" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/controller/PlayerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="30" selection-start="958" selection-end="958" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Box.java">
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="39" selection-start="625" selection-end="625" vertical-scroll-proportion="0.44334975">
-          <folding />
+        <state line="69" column="160" selection-start="2221" selection-end="2221" vertical-scroll-proportion="0.45812806">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

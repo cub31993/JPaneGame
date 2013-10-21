@@ -16,6 +16,7 @@ public class PhysicsEntity extends Entity
     private float mass;
     private boolean dynamic, updated;
     private Vector2f velocity;
+    private CollisionFilter collisionFilter;
 
     public PhysicsEntity(Vector2f position, int width, int height, float mass, boolean dynamic) {
         super(position, width, height);
@@ -68,6 +69,16 @@ public class PhysicsEntity extends Entity
     public void setUpdated(boolean updated)
     {
         this.updated = updated;
+    }
+
+    public CollisionFilter getCollisionFilter()
+    {
+        return this.collisionFilter;
+    }
+
+    public void setCollisionFilter(CollisionFilter filterLevel)
+    {
+        this.collisionFilter = filterLevel;
     }
 
     public void update()

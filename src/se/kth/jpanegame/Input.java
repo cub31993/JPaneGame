@@ -48,6 +48,14 @@ public class Input implements KeyListener {
         return keyStateUp[key];
     }
 
+    public boolean isKeyPressed( int key)
+    {
+        boolean keyReturn = this.keyStateDown[key];
+        this.keyStateDown[key] = false;
+
+        return keyReturn;
+    }
+
     public void update() {
         keyStateUp = new boolean[256];
     }

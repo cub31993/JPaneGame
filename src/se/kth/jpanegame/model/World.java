@@ -44,12 +44,8 @@ public class World
         player = new Player(level.getSpawn(), 32, 64, 2, true); // skapar spelaren i världen på spawn position angivet i bilden med en gulpixel
         level.getEntitys().add(player);
         level.getEntitys().add(new Box(new Vector2f(100, 0), 32, 32));
-        level.getEntitys().add(new Box(new Vector2f(600, 0), 32, 32));
-        level.getEntitys().add(new Box(new Vector2f(600, -38), 32, 32));
-        for(int i=0; i<50; i++)
-        {
-            level.getEntitys().add(new Box(new Vector2f(200+i*40, 0), 32, 32));
-        }
+        level.getEntitys().add(new Box(new Vector2f(100, -40), 32, 32));
+        level.getEntitys().add(new Box(new Vector2f(100, -100), 32, 32));
 
         for(Entity e: level.getEntitys())
         {
