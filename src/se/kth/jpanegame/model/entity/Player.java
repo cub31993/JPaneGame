@@ -2,6 +2,8 @@ package se.kth.jpanegame.model.entity;
 
 import se.kth.jpanegame.Vector2f;
 
+import java.awt.*;
+
 /**
  * Created with IntelliJ IDEA.
  * User: marek
@@ -17,6 +19,7 @@ public class Player extends PhysicsEntity
 
     public Player(Vector2f position, int width, int height, float mass, boolean dynamic) {
         super(position, width, height, mass, dynamic);
+        this.setColor(Color.orange);
     }
 
     public void moveLeft()

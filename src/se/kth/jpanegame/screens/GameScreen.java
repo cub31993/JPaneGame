@@ -42,7 +42,7 @@ public class GameScreen extends Screen {
         camera.updateView(world.getEntitys());
 
         for(Entity e: world.getEntitys()) {
-
+            g.setColor(e.getColor());
             g.fillRect((int)e.getPosition().getX(), (int)e.getPosition().getY(), e.getWidth(), e.getHeight());
         }
 

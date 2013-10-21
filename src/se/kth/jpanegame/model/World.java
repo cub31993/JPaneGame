@@ -45,6 +45,11 @@ public class World
         level.getEntitys().add(player);
         level.getEntitys().add(new Box(new Vector2f(100, 0), 32, 32));
         level.getEntitys().add(new Box(new Vector2f(600, 0), 32, 32));
+        level.getEntitys().add(new Box(new Vector2f(600, -38), 32, 32));
+        for(int i=0; i<50; i++)
+        {
+            level.getEntitys().add(new Box(new Vector2f(200+i*40, 0), 32, 32));
+        }
 
         for(Entity e: level.getEntitys())
         {

@@ -17,6 +17,7 @@ public abstract class Entity
     private int width;
     private int height;
     private Rectangle rectangle;
+    private Color color = Color.darkGray;
 
     public Entity(Vector2f position, int width, int height)
     {
@@ -69,5 +70,15 @@ public abstract class Entity
     public void setHeight(int height)
     {
         this.height = height;
+    }
+
+    public void setColor(Color color)
+    {
+        this.color = color;
+    }
+
+    public Color getColor()
+    {
+        return this.color;
     }
 }
