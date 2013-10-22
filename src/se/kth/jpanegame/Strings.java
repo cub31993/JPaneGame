@@ -11,4 +11,5 @@ public class Strings
 {
     public static final String MOVEMENT_TIPS = "Use arrow keys to move around.";
     public static final String LIFT_TIPS = "Press arrow down to lift a box.";
+    public static final String LOST = "You lost.";
 }

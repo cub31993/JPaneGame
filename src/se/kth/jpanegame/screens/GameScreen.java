@@ -35,6 +35,10 @@ public class GameScreen extends Screen {
     public void update(Input input) {
         this.world.getPhysicsWorld().update();
         controller.update(input);
+
+        if(player.getPosition().getY() > 350) {
+            setScreen(new LostScreen());
+        }
     }
 
     public void render(Graphics g) {

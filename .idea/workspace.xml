@@ -2,19 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a175422b-bd69-4059-b58a-b9ce62fc76f1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/kth/jpanegame/Game.java" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/Game.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/screens/LostScreen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/kth/jpanegame/Strings.java" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/Strings.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JPaneGame.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382428117556" ignored="false" />
+    <file path="/Dummy.txt" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382428160905" ignored="false" />
     <file path="/fragment.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382038593610" ignored="false" />
     <file path="/Window.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382033524188" ignored="false" />
     <file path="/Game.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382428151674" ignored="false" />
     <file path="/Renderer.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382034075786" ignored="false" />
     <file path="/SpriteSheet.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382034055132" ignored="false" />
     <file path="/Screen.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382118207397" ignored="false" />
-    <file path="/GameScreen.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382400095407" ignored="false" />
+    <file path="/GameScreen.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382428829368" ignored="false" />
     <file path="/World.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382390831473" ignored="false" />
     <file path="/Entity.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382350559510" ignored="false" />
     <file path="/PlayerController.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382374421174" ignored="false" />
@@ -32,10 +34,11 @@
     <file path="/Jumpable.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382341034875" ignored="false" />
     <file path="/CollisionFilter.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382370502873" ignored="false" />
     <file path="/Input.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382374400807" ignored="false" />
-    <file path="/HUD.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382400296240" ignored="false" />
-    <file path="/Strings.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382399406629" ignored="false" />
+    <file path="/HUD.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382428363530" ignored="false" />
+    <file path="/Strings.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382428545241" ignored="false" />
     <file path="/MenuScreen.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382428109921" ignored="false" />
     <file path="/MenuController.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382427480441" ignored="false" />
+    <file path="/LostScreen.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382428839827" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,10 +99,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GameScreen.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GameScreen.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="5" selection-start="1860" selection-end="1860" vertical-scroll-proportion="0.0">
+            <state line="38" column="43" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.7207602">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LostScreen.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/screens/LostScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="40" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -108,16 +120,16 @@
       <file leaf-file-name="HUD.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/HUD.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="33" selection-start="1258" selection-end="1258" vertical-scroll-proportion="0.0">
+            <state line="51" column="5" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Game.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="23" selection-start="1169" selection-end="1169" vertical-scroll-proportion="0.22953217">
+            <state line="45" column="23" selection-start="1169" selection-end="1169" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -137,7 +149,7 @@
       <file leaf-file-name="Strings.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Strings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="77" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
+            <state line="13" column="48" selection-start="411" selection-end="411" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -194,7 +206,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Entity.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/CollisionFilter.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Box.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/Input.java" />
@@ -203,13 +214,14 @@
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/World.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/PhysicsWorld.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Player.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/Strings.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/HUD.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/controller/MenuController.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/LevelLoader.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/screens/MenuScreen.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/Game.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/Strings.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/HUD.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/screens/LostScreen.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java" />
       </list>
     </option>
   </component>
@@ -622,7 +634,11 @@
       <created>1382428118782</created>
       <updated>1382428118782</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="some menu">
+      <created>1382428163329</created>
+      <updated>1382428163329</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -729,13 +745,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/screens/Screen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/Box.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="51" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0">
@@ -778,13 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Strings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="77" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Input.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="27" selection-end="27" vertical-scroll-proportion="0.048245613">
@@ -813,6 +815,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Strings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="48" selection-start="411" selection-end="411" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/screens/MenuScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
@@ -822,23 +831,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="23" selection-start="1169" selection-end="1169" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/HUD.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="33" selection-start="1258" selection-end="1258" vertical-scroll-proportion="0.0">
+        <state line="51" column="5" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/screens/LostScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="40" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="5" selection-start="1860" selection-end="1860" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="23" selection-start="1169" selection-end="1169" vertical-scroll-proportion="0.22953217">
+        <state line="38" column="43" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.7207602">
           <folding />
         </state>
       </provider>
