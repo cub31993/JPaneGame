@@ -1,6 +1,10 @@
 package se.kth.jpanegame.model;
 
+import se.kth.jpanegame.Vector2f;
+import se.kth.jpanegame.model.entity.Box;
+import se.kth.jpanegame.model.entity.CollisionFilter;
 import se.kth.jpanegame.model.entity.PhysicsEntity;
+import se.kth.jpanegame.model.entity.Player;
 
 import java.util.ArrayList;
 
@@ -71,6 +75,12 @@ public class PhysicsWorld
     {
         for(PhysicsEntity pe1: this.entityArrayList)
         {
+            if(pe1.getCollisionFilter() == CollisionFilter.PLAYER)
+            {
+                Player player = (Player) pe1;
+                player.setCanLift(false);
+            }
+
             if(pe1.isDynamic() && !pe1.isUpdated())
             {
                 for(PhysicsEntity pe2: this.entityArrayList)
@@ -114,19 +124,19 @@ public class PhysicsWorld
                                 if (wy > -hx)
                                 {
                                     //System.out.println("Collision on top!");
-                                    pe1.setVelocity(pe1.getVelocity().getX(), 0);
+                                    pe1.setVelocity(pe1.getVelocity().getX(), pe1.getVelocity().getY()*-0.01f);
                                 }
                                 else
                                 {
                                     //System.out.println("Collision on right!");
                                     if(!pe2.isDynamic())
                                     {
-                                        pe1.setVelocity(pe1.getVelocity().getX()*-0.001f, pe1.getVelocity().getY());
+                                        pe1.setVelocity(pe1.getVelocity().getX()*-0.01f, pe1.getVelocity().getY());
                                     }
                                     else
                                     {
                                         pe2.setVelocity(pe2.getVelocity().getX()+pe1.getVelocity().getX(), pe2.getVelocity().getY());
-                                        pe1.setVelocity(pe1.getVelocity().getX()*-0.001f, pe1.getVelocity().getY());
+                                        pe1.setVelocity(pe1.getVelocity().getX()*-0.01f, pe1.getVelocity().getY());
                                     }
                                 }
                             }
@@ -137,21 +147,27 @@ public class PhysicsWorld
                                     //System.out.println("Collision on left!");
                                     if(!pe2.isDynamic())
                                     {
-                                        pe1.setVelocity(pe1.getVelocity().getX()*-0.001f, pe1.getVelocity().getY());
+                                        pe1.setVelocity(pe1.getVelocity().getX()*-0.01f, pe1.getVelocity().getY());
                                     }
                                     else
                                     {
                                         pe2.setVelocity(pe2.getVelocity().getX()+pe1.getVelocity().getX(), pe2.getVelocity().getY());
-                                        pe1.setVelocity(pe1.getVelocity().getX()*-0.001f, pe1.getVelocity().getY());
+                                        pe1.setVelocity(pe1.getVelocity().getX()*-0.01f, pe1.getVelocity().getY());
                                     }
                                 }
                                 else
                                 {
                                     //System.out.println("Collision on bottom!");
                                     pe1.setVelocity(pe1.getVelocity().getX(), 0);
-                                    pe1.setPosition(pe1.getPosition().getX(), pe2.getPosition().getY()-pe1.getHeight());
+                                    if(pe1.getCollisionFilter() == CollisionFilter.PLAYER)
+                                        pe1.setPosition(pe1.getPosition().getX(), pe2.getPosition().getY()-pe1.getHeight());
                                 }
                             }
+                        }
+
+                        if(pe1.getCollisionFilter() == CollisionFilter.PLAYER && pe2.getCollisionFilter()==CollisionFilter.BOX)
+                        {
+                            checkIfPlayerCanLiftABox((Player)pe1, (Box)pe2);
                         }
                     }
                 }
@@ -173,31 +189,46 @@ public class PhysicsWorld
         }
     }
 
-    private boolean collidesLeft(PhysicsEntity pe1, PhysicsEntity pe2)
+    private void checkIfPlayerCanLiftABox(Player tmp_player, Box pe2)
     {
-        if(pe1.getPosition().getX() <= pe2.getPosition().getX()+pe2.getWidth())
-            return true;
-        return false;
+        if(!tmp_player.isLifting())
+        {
+            if(tmp_player.getMovingTowards() == Player.Side.LEFT)
+            {
+                if(checkIfPointCollides(pe2, new Vector2f(tmp_player.getPosition().getX()-16.f, tmp_player.getPosition().getY()+(tmp_player.getHeight()*2/5))) ||
+                        checkIfPointCollides(pe2, new Vector2f(tmp_player.getPosition().getX()-16.f, tmp_player.getPosition().getY()+(tmp_player.getHeight()*4/5))))
+                {
+                    tmp_player.setCanLift(true, pe2);
+                    //this.liftedBox.setDynamic(false);
+                }
+            }
+
+            if(tmp_player.getMovingTowards() == Player.Side.RIGHT)
+            {
+                if(checkIfPointCollides(pe2, new Vector2f(tmp_player.getPosition().getX()+tmp_player.getWidth()+16.f, tmp_player.getPosition().getY()+(tmp_player.getHeight()*2/5))) ||
+                        checkIfPointCollides(pe2, new Vector2f(tmp_player.getPosition().getX()+tmp_player.getWidth()+16.f, tmp_player.getPosition().getY()+(tmp_player.getHeight()*4/5))))
+                {
+                    tmp_player.setCanLift(true, pe2);
+                    //this.liftedBox.setDynamic(false);
+                }
+            }
+        }
     }
 
-    private boolean collidesTop(PhysicsEntity pe1, PhysicsEntity pe2)
+    public boolean checkIfPointCollides(PhysicsEntity pe, Vector2f point)
     {
-        if(pe1.getPosition().getY()+pe1.getHeight() >= pe2.getPosition().getY())
-            return true;
-        return false;
-    }
+        float pe_x = pe.getPosition().getX();
+        float pe_xwidth = pe.getPosition().getX()+pe.getWidth();
+        float pe_y = pe.getPosition().getY();
+        float pe_yheight = pe.getPosition().getY()+pe.getHeight();
 
-    private boolean collidesRight(PhysicsEntity pe1, PhysicsEntity pe2)
-    {
-        if(pe1.getPosition().getX()+pe1.getWidth() >= pe2.getPosition().getX())
-            return true;
-        return false;
-    }
-
-    private boolean collidesBottom(PhysicsEntity pe1, PhysicsEntity pe2)
-    {
-        if(pe1.getPosition().getY() <= pe2.getPosition().getY()+pe2.getHeight())
-            return true;
+        if(point.getX() <= pe_xwidth && point.getX() >= pe_x)
+        {
+            if(point.getY() >= pe_y && point.getY() <= pe_yheight)
+            {
+                return true;
+            }
+        }
         return false;
     }
 }

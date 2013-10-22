@@ -19,6 +19,7 @@ public class Player extends PhysicsEntity
     private boolean can_jump = true;
     private Side movingTowards = Side.RIGHT;
     private boolean lifting = false;
+    private boolean canLift = false;
     private Box liftedBox = null;
 
     public Player(Vector2f position, int width, int height, float mass, boolean dynamic) {
@@ -50,9 +51,9 @@ public class Player extends PhysicsEntity
 
     public void liftAnBox(ArrayList<PhysicsEntity> peList)
     {
-        if(!this.lifting)
+        if(!this.lifting && this.canLift)
         {
-            for(PhysicsEntity pe: peList)
+            /*for(PhysicsEntity pe: peList)
             {
                 if(pe.getCollisionFilter() == CollisionFilter.BOX)
                 {
@@ -75,11 +76,13 @@ public class Player extends PhysicsEntity
                         }
                     }
                 }
-            }
+            }*/
+            this.lifting = true;
         }
         else
         {
             this.lifting = false;
+            this.canLift = false;
             //this.liftedBox.setDynamic(true);
             this.liftedBox = null;
         }
@@ -93,6 +96,32 @@ public class Player extends PhysicsEntity
     public void setCanJump(boolean jump)
     {
         this.can_jump = jump;
+    }
+
+    public Side getMovingTowards()
+    {
+        return this.movingTowards;
+    }
+
+    public void setCanLift(boolean lift, Box box)
+    {
+        this.canLift = lift;
+        this.liftedBox = box;
+    }
+
+    public void setCanLift(boolean lift)
+    {
+        this.canLift = lift;
+    }
+
+    public boolean getCanLift()
+    {
+        return this.canLift;
+    }
+
+    public boolean isLifting()
+    {
+        return this.lifting;
     }
 
     @Override
@@ -116,24 +145,5 @@ public class Player extends PhysicsEntity
     public enum Side
     {
         RIGHT, LEFT
-    }
-
-    private boolean checkIfPointCollides(PhysicsEntity pe, Vector2f point)
-    {
-        float pe_x = pe.getPosition().getX();
-        float pe_xwidth = pe.getPosition().getX()+pe.getWidth();
-        float pe_y = pe.getPosition().getY();
-        float pe_yheight = pe.getPosition().getY()+pe.getHeight();
-
-        if(point.getX() <= pe_xwidth && point.getX() >= pe_x)
-        {
-            if(point.getY() >= pe_y && point.getY() <= pe_yheight)
-            {
-                System.out.println("Found box to lift.");
-                return true;
-            }
-        }
-        System.out.println("Didn't find box to lift.");
-        return false;
     }
 }

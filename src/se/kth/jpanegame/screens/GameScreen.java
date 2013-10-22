@@ -2,6 +2,7 @@ package se.kth.jpanegame.screens;
 
 import se.kth.jpanegame.Camera;
 import se.kth.jpanegame.Input;
+import se.kth.jpanegame.Strings;
 import se.kth.jpanegame.controller.PlayerController;
 import se.kth.jpanegame.Assets;
 import se.kth.jpanegame.model.World;
@@ -45,6 +46,13 @@ public class GameScreen extends Screen {
             g.setColor(e.getColor());
             g.fillRect((int)e.getPosition().getX(), (int)e.getPosition().getY(), e.getWidth(), e.getHeight());
         }
+
+        if(this.player.getCanLift() && this.world.getHUD().getText() != Strings.LIFT_TIPS)
+        {
+            this.world.getHUD().setTextWithTimeout(Strings.LIFT_TIPS, 1, 0.7f);
+        }
+
+        this.world.getHUD().render(g);
 
        // g.drawRect((int) player.getPosition().getX(), (int) player.getPosition().getY(), player.getWidth(), player.getHeight());
     }

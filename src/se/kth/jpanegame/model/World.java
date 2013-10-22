@@ -2,6 +2,7 @@ package se.kth.jpanegame.model;
 
 import se.kth.jpanegame.Camera;
 import se.kth.jpanegame.LevelLoader;
+import se.kth.jpanegame.Strings;
 import se.kth.jpanegame.Vector2f;
 import se.kth.jpanegame.model.entity.*;
 
@@ -19,6 +20,7 @@ public class World
     private PhysicsWorld physicsWorld;
     public Player player;
     public Level level;
+    private HUD hud;
 
     public World()
     {
@@ -38,6 +40,11 @@ public class World
         return this.physicsWorld;
     }
 
+    public HUD getHUD()
+    {
+        return this.hud;
+    }
+
     private void createWorld() {
         this.physicsWorld = new PhysicsWorld();
         level = LevelLoader.loadLevel(0);  // hämtar level 0 dvs x = 0 * 25; y = 0 * 60; från bilden levels.png
@@ -51,5 +58,8 @@ public class World
         {
             this.physicsWorld.addEntity((PhysicsEntity) e);
         }
+
+        this.hud = new HUD(350, 250);
+        this.hud.setTextWithFadeout(Strings.MOVEMENT_TIPS, 2, 200);
     }
 }
