@@ -2,6 +2,7 @@ package se.kth.jpanegame;
 
 import se.kth.jpanegame.model.Level;
 import se.kth.jpanegame.model.entity.Block;
+import se.kth.jpanegame.model.entity.Box;
 
 /**
  * Created with IntelliJ IDEA.
@@ -33,6 +34,8 @@ public class LevelLoader {
                 else if(pixel == 0x000000) block = 1;  // en del av banan
                 else if(pixel == 0xB6FF00) {    // spawn position
                     level.setSpawn(x * 32, y * 32 - 40);  //spelare spawnar lite över marken
+                } else if(pixel == 0xFF0000) {
+                    level.getEntitys().add(new Box(new Vector2f(x * 32, y * 32), 32, 32));
                 }
                 blocks[x + y * w] = block;
             }

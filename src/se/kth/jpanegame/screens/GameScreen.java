@@ -39,7 +39,9 @@ public class GameScreen extends Screen {
         this.world.getPhysicsWorld().update();
         controller.update(input);
 
-        if(player.getPosition().getY() > 500) {
+        System.out.println(player.getPosition().getY());
+
+        if(player.getPosition().getY() > 360) {
             setScreen(new LostScreen());
         }
     }

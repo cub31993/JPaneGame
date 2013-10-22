@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JPaneGame:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JPaneGame_jar</output-path>
+    <root id="archive" name="JPaneGame.jar">
+      <element id="module-output" name="JPaneGame" />
+    </root>
+  </artifact>
+</component>

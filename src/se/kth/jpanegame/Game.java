@@ -12,13 +12,10 @@ import se.kth.jpanegame.screens.GameScreen;
 import se.kth.jpanegame.screens.MenuScreen;
 import se.kth.jpanegame.screens.Screen;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferStrategy;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
 
 public class Game extends Canvas implements Runnable {
 

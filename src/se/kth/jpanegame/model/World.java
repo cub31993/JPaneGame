@@ -50,10 +50,10 @@ public class World
         level = LevelLoader.loadLevel(0);  // hämtar level 0 dvs x = 0 * 25; y = 0 * 60; från bilden levels.png
         player = new Player(level.getSpawn(), 32, 64, 2, true); // skapar spelaren i världen på spawn position angivet i bilden med en gulpixel
         level.getEntitys().add(player);
-        level.getEntitys().add(new Box(new Vector2f(100, 0), 32, 32));
+      /*  level.getEntitys().add(new Box(new Vector2f(100, 0), 32, 32));
         level.getEntitys().add(new Box(new Vector2f(100, -40), 32, 32));
         level.getEntitys().add(new Box(new Vector2f(100, -100), 32, 32));
-
+                    */
         for(Entity e: level.getEntitys())
         {
             this.physicsWorld.addEntity((PhysicsEntity) e);
