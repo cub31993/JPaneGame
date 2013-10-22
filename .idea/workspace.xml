@@ -7,7 +7,7 @@
     </list>
     <ignored path="JPaneGame.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382428901496" ignored="false" />
+    <file path="/Dummy.txt" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382428937878" ignored="false" />
     <file path="/fragment.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382038593610" ignored="false" />
     <file path="/Window.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382033524188" ignored="false" />
     <file path="/Game.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382428151674" ignored="false" />
@@ -109,7 +109,7 @@
       <file leaf-file-name="LostScreen.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/screens/LostScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="32" selection-start="940" selection-end="940" vertical-scroll-proportion="0.6520468">
+            <state line="38" column="31" selection-start="864" selection-end="864" vertical-scroll-proportion="0.6023392">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -642,7 +642,11 @@
       <created>1382428904029</created>
       <updated>1382428904029</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="some menu">
+      <created>1382428940198</created>
+      <updated>1382428940198</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -858,7 +862,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/screens/LostScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="32" selection-start="940" selection-end="940" vertical-scroll-proportion="0.6520468">
+        <state line="38" column="31" selection-start="864" selection-end="864" vertical-scroll-proportion="0.6023392">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

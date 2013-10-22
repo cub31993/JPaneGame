@@ -36,7 +36,7 @@ public class LostScreen extends Screen {
 
         g.setColor(Color.WHITE);
         g.setFont(titleFont);
-        g.drawString("2DPlatform", 100, 100);
+        g.drawString("You lost!", 100, 100);
         g.setFont(menuFont);
         g.drawString("S: Restart Game", 100, 150);
         g.drawString("Q: Quit", 100, 200);
