@@ -165,9 +165,9 @@ public class PhysicsWorld
                             }
                         }
 
-                        if(pe1.getCollisionFilter() == CollisionFilter.PLAYER && pe2.getCollisionFilter()==CollisionFilter.BOX)
+                        if(pe1.getCollisionFilter() == CollisionFilter.PLAYER && (pe2.getCollisionFilter()==CollisionFilter.BOX || pe2.getCollisionFilter()==CollisionFilter.TORCHLIGHT))
                         {
-                            checkIfPlayerCanLiftABox((Player)pe1, (Box)pe2);
+                            checkIfPlayerCanLiftABox((Player)pe1, pe2);
                         }
                     }
                 }
@@ -189,7 +189,7 @@ public class PhysicsWorld
         }
     }
 
-    private void checkIfPlayerCanLiftABox(Player tmp_player, Box pe2)
+    private void checkIfPlayerCanLiftABox(Player tmp_player, PhysicsEntity pe2)
     {
         if(!tmp_player.isLifting())
         {

@@ -8,5 +8,5 @@ package se.kth.jpanegame.model.entity;
  * To change this template use File | Settings | File Templates.
  */
 public enum CollisionFilter {
-    PLAYER, BLOCK, BOX
+    PLAYER, BLOCK, BOX, TORCHLIGHT
 }

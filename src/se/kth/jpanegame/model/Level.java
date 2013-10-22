@@ -19,11 +19,13 @@ public class Level {
     private int height;
     private Vector2f spawnPosition;
     private ArrayList<Entity> entityList;
+    private ArrayList<Entity> lightList;
 
     public byte[] blocks;
 
     public Level() {
         entityList = new ArrayList<Entity>();
+        lightList = new ArrayList<Entity>();
     }
 
     public ArrayList<Entity> getEntitys() {
@@ -36,5 +38,10 @@ public class Level {
 
     public void setSpawn(int x, int y) {
         this.spawnPosition = new Vector2f(x, y);
+    }
+
+    public ArrayList<Entity> getLightList()
+    {
+        return this.lightList;
     }
 }

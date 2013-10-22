@@ -18,12 +18,14 @@ public abstract class Entity
     private int height;
     private Rectangle rectangle;
     private Color color = Color.darkGray;
+    private boolean render;
 
     public Entity(Vector2f position, int width, int height)
     {
         this.position = position;
         this.width = width;
         this.height = height;
+        this.render = true;
     }
 
     public Vector2f getPosition()
@@ -60,6 +62,16 @@ public abstract class Entity
     {
         this.position.setX(x);
         this.position.setY(y);
+    }
+
+    public boolean isRenderable()
+    {
+        return this.render;
+    }
+
+    public void setRenderable(boolean renderable)
+    {
+        this.render = renderable;
     }
 
     public void setWidth(int width)

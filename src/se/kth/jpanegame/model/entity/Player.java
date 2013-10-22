@@ -20,7 +20,7 @@ public class Player extends PhysicsEntity
     private Side movingTowards = Side.RIGHT;
     private boolean lifting = false;
     private boolean canLift = false;
-    private Box liftedBox = null;
+    private PhysicsEntity liftedBox = null;
 
     public Player(Vector2f position, int width, int height, float mass, boolean dynamic) {
         super(position, width, height, mass, dynamic);
@@ -103,7 +103,7 @@ public class Player extends PhysicsEntity
         return this.movingTowards;
     }
 
-    public void setCanLift(boolean lift, Box box)
+    public void setCanLift(boolean lift, PhysicsEntity box)
     {
         this.canLift = lift;
         this.liftedBox = box;
@@ -136,7 +136,7 @@ public class Player extends PhysicsEntity
             if(this.movingTowards == Side.LEFT)
                 this.liftedBox.setPosition(this.getPosition().getX()-(liftedBox.getWidth()+2),this.getPosition().getY()+(this.getWidth()/2));
             else if(this.movingTowards == Side.RIGHT)
-                this.liftedBox.setPosition(this.getPosition().getX()+(liftedBox.getWidth()+2),this.getPosition().getY()+(this.getWidth()/2));
+                this.liftedBox.setPosition(this.getPosition().getX()+this.getWidth(),this.getPosition().getY()+(this.getWidth()/2));
 
             this.liftedBox.setVelocity(this.liftedBox.getVelocity().getX(),0.0f);
         }

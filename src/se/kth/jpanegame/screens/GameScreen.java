@@ -42,6 +42,8 @@ public class GameScreen extends Screen {
         if(player.getPosition().getY() > 500) {
             setScreen(new LostScreen());
         }
+
+        this.darkness.update(this.world.level.getLightList());
     }
 
     public void render(Graphics g) {
@@ -50,8 +52,11 @@ public class GameScreen extends Screen {
         camera.updateView(world.getEntitys());
 
         for(Entity e: world.getEntitys()) {
-            g.setColor(e.getColor());
-            g.fillRect((int)e.getPosition().getX(), (int)e.getPosition().getY(), e.getWidth(), e.getHeight());
+            if(e.isRenderable())
+            {
+                g.setColor(e.getColor());
+                g.fillRect((int)e.getPosition().getX(), (int)e.getPosition().getY(), e.getWidth(), e.getHeight());
+            }
         }
 
         if(this.player.getCanLift() && this.world.getHUD().getText() != Strings.LIFT_TIPS)

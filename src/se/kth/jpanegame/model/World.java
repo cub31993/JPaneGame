@@ -53,11 +53,19 @@ public class World
         level.getEntitys().add(new Box(new Vector2f(100, 0), 32, 32));
         level.getEntitys().add(new Box(new Vector2f(100, -40), 32, 32));
         level.getEntitys().add(new Box(new Vector2f(100, -100), 32, 32));
+        Torchlight light = new Torchlight(new Vector2f(100, 500), 8, 32);
+        level.getEntitys().add(light);
 
         for(Entity e: level.getEntitys())
         {
             this.physicsWorld.addEntity((PhysicsEntity) e);
         }
+
+        Light ljus = light.getLight();
+        level.getEntitys().add(ljus);
+        level.getLightList().add(ljus);
+
+
 
         this.hud = new HUD(350, 250);
         this.hud.setTextWithFadeout(Strings.MOVEMENT_TIPS, 2, 200);
