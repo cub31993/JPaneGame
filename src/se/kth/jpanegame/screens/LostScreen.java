@@ -23,7 +23,7 @@ public class LostScreen extends Screen {
     }
 
     public void update(Input input) {
-        if (input.isKeyDown(KeyEvent.VK_S)) {
+        if (input.isKeyDown(KeyEvent.VK_R)) {
             startGame();
         }
 
