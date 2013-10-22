@@ -43,6 +43,7 @@ public class Game extends Canvas implements Runnable {
 
     public void stop() {
         running = false;
+        System.exit(0);
     }
 
     @Override
