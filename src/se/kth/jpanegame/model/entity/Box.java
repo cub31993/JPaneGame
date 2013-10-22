@@ -17,7 +17,7 @@ public class Box extends PhysicsEntity
     public Box(Vector2f position, int width, int height)
     {
         super(position, width, height, 0, true);
-        this.createRectange();
+        this.createRectangle();
         this.getRectangle().setBounds((int)position.getX(), (int)position.getY(), (int)width, (int)height);
         this.setColor(Color.lightGray);
         this.setCollisionFilter(CollisionFilter.BOX);

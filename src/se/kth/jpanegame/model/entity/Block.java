@@ -14,7 +14,7 @@ public class Block extends PhysicsEntity {
 
     public Block (Vector2f position, int width, int height) {
         super(new Vector2f(position.getX() * 32, position.getY() * 32), width, height, 0, false);
-        this.createRectange();
+        this.createRectangle();
         this.getRectangle().setBounds((int)position.getX(), (int)position.getY(), width, height);
     }
 }

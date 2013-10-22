@@ -17,6 +17,7 @@ public class Assets {
 
     public static BufferedImage bg = scale(load("res/background.png"), 4);
     public static BufferedImage level = load("res/levels.png");
+    public static BufferedImage darkness = load("res/darkness.png");
 
 
     public static BufferedImage load(String name) {
@@ -32,7 +33,7 @@ public class Assets {
         }
     }
 
-    private static BufferedImage scale(BufferedImage src, int scale) {
+    public static BufferedImage scale(BufferedImage src, int scale) {
         int w = src.getWidth() * scale;
         int h = src.getHeight() * scale;
         BufferedImage res = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);

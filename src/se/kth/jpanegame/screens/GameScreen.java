@@ -6,6 +6,7 @@ import se.kth.jpanegame.Strings;
 import se.kth.jpanegame.controller.PlayerController;
 import se.kth.jpanegame.Assets;
 import se.kth.jpanegame.model.World;
+import se.kth.jpanegame.model.entity.Darkness;
 import se.kth.jpanegame.model.entity.Entity;
 import se.kth.jpanegame.model.entity.Player;
 
@@ -24,25 +25,27 @@ public class GameScreen extends Screen {
     private PlayerController controller;
     private Player player;
     private Camera camera;
+    private Darkness darkness;
 
     public GameScreen() {
         this.world = new World();  // skapar world
         controller = new PlayerController(world);    // skapar spelar kontroller
         player = world.getPlayer();
         camera = new Camera(player);
+        this.darkness = new Darkness(960, 720);
     }
 
     public void update(Input input) {
         this.world.getPhysicsWorld().update();
         controller.update(input);
 
-        if(player.getPosition().getY() > 350) {
+        if(player.getPosition().getY() > 500) {
             setScreen(new LostScreen());
         }
     }
 
     public void render(Graphics g) {
-        g.drawImage(Assets.bg, 0, 0, null);  // ritar ut bakgrund
+        //g.drawImage(Assets.bg, 0, 0, null);  // ritar ut bakgrund
 
         camera.updateView(world.getEntitys());
 
@@ -56,7 +59,10 @@ public class GameScreen extends Screen {
             this.world.getHUD().setTextWithTimeout(Strings.LIFT_TIPS, 1, 0.7f);
         }
 
+        this.darkness.render(g);
+        //g.drawImage(Assets.darkness, 0,0, null);
         this.world.getHUD().render(g);
+
 
        // g.drawRect((int) player.getPosition().getX(), (int) player.getPosition().getY(), player.getWidth(), player.getHeight());
     }

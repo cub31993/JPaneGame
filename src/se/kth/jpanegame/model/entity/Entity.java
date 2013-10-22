@@ -46,7 +46,7 @@ public abstract class Entity
         return this.rectangle;
     }
 
-    public void createRectange()
+    public void createRectangle()
     {
         this.rectangle = new Rectangle((int)this.getPosition().getX(), (int)this.getPosition().getY(), (int)this.getWidth(), (int)this.getHeight());
     }
