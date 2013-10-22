@@ -9,6 +9,7 @@ package se.kth.jpanegame;
  */
 
 import se.kth.jpanegame.screens.GameScreen;
+import se.kth.jpanegame.screens.MenuScreen;
 import se.kth.jpanegame.screens.Screen;
 
 import javax.imageio.ImageIO;
@@ -48,7 +49,7 @@ public class Game extends Canvas implements Runnable {
     public void run() {
         requestFocus();
 
-        setScreen(new GameScreen());
+        setScreen(new MenuScreen());
 
         long lastTime = System.nanoTime();
         double unprocessed = 0;
@@ -62,12 +63,10 @@ public class Game extends Canvas implements Runnable {
             long now = System.nanoTime();
             unprocessed += (now - lastTime) / nsPerTick;
             lastTime = now;
-            boolean shouldRender = true;
             while (unprocessed >= 1) {
                 updates++;
                 update();
                 unprocessed -= 1;
-                shouldRender = true;
             }
 
             try {
@@ -117,8 +116,7 @@ public class Game extends Canvas implements Runnable {
         if (screen != null)
         {
             screen.init(this);
-            GameScreen tmp_screen = (GameScreen) screen;
-            tmp_screen.initController();
+            //Screen tmp_screen = (GameScreen) screen;
         }
     }
 

@@ -61,11 +61,4 @@ public class GameScreen extends Screen {
     {
         return this.controller;
     }
-
-    public void initController()
-    {
-       // this.game.setFocusable(true);
-        //this.game.addKeyListener(this.controller);
-        System.out.println("Controller initialised!");
-    }
 }
