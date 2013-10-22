@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a175422b-bd69-4059-b58a-b9ce62fc76f1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/screens/LostScreen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/kth/jpanegame/Strings.java" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/Strings.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/se/kth/jpanegame/screens/LostScreen.java" afterPath="$PROJECT_DIR$/src/se/kth/jpanegame/screens/LostScreen.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JPaneGame.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382428160905" ignored="false" />
+    <file path="/Dummy.txt" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382428901496" ignored="false" />
     <file path="/fragment.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382038593610" ignored="false" />
     <file path="/Window.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382033524188" ignored="false" />
     <file path="/Game.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382428151674" ignored="false" />
@@ -38,7 +36,7 @@
     <file path="/Strings.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382428545241" ignored="false" />
     <file path="/MenuScreen.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382428109921" ignored="false" />
     <file path="/MenuController.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382427480441" ignored="false" />
-    <file path="/LostScreen.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382428839827" ignored="false" />
+    <file path="/LostScreen.java" changelist="a175422b-bd69-4059-b58a-b9ce62fc76f1" time="1382428923387" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,20 +97,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GameScreen.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GameScreen.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="43" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.7207602">
+            <state line="38" column="43" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LostScreen.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="LostScreen.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/screens/LostScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="40" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="40" column="32" selection-start="940" selection-end="940" vertical-scroll-proportion="0.6520468">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,7 +138,7 @@
       <file leaf-file-name="MenuScreen.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/screens/MenuScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
+            <state line="9" column="0" selection-start="161" selection-end="928" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -220,8 +220,8 @@
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/Game.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/Strings.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/model/entity/HUD.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/screens/LostScreen.java" />
         <option value="$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/jpanegame/screens/LostScreen.java" />
       </list>
     </option>
   </component>
@@ -638,7 +638,11 @@
       <created>1382428163329</created>
       <updated>1382428163329</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="some menu">
+      <created>1382428904029</created>
+      <updated>1382428904029</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -822,15 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/screens/MenuScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="23" selection-start="1169" selection-end="1169" vertical-scroll-proportion="0.0">
@@ -845,17 +840,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/screens/LostScreen.java">
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="40" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0">
+        <state line="38" column="43" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/screens/GameScreen.java">
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/screens/MenuScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="43" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.7207602">
-          <folding />
+        <state line="9" column="0" selection-start="161" selection-end="928" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/jpanegame/screens/LostScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="32" selection-start="940" selection-end="940" vertical-scroll-proportion="0.6520468">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
