@@ -21,7 +21,7 @@ public class MenuScreen extends Screen {
         }
 
         if (input.isKeyDown(KeyEvent.VK_Q)) {
-
+            game.stop();
         }
     }
 
