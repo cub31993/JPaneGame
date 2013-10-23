@@ -56,6 +56,11 @@ public class World
         Torchlight light = new Torchlight(new Vector2f(100, 500), 8, 32);
         level.getEntitys().add(light);
 
+        Torchlight light1 = new Torchlight(new Vector2f(330, 0), 8, 32);
+        level.getEntitys().add(light1);
+        Torchlight light2 = new Torchlight(new Vector2f(530, -200), 8, 32);
+        level.getEntitys().add(light2);
+
         for(Entity e: level.getEntitys())
         {
             this.physicsWorld.addEntity((PhysicsEntity) e);
@@ -65,9 +70,17 @@ public class World
         level.getEntitys().add(ljus);
         level.getLightList().add(ljus);
 
+        Light ljus1 = light1.getLight();
+        level.getEntitys().add(ljus1);
+        level.getLightList().add(ljus1);
+
+        Light ljus2 = light2.getLight();
+        level.getEntitys().add(ljus2);
+        level.getLightList().add(ljus2);
 
 
-        this.hud = new HUD(350, 250);
+
+        this.hud = new HUD(360, 280);
         this.hud.setTextWithFadeout(Strings.MOVEMENT_TIPS, 2, 200);
     }
 }

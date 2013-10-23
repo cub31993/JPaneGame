@@ -195,8 +195,8 @@ public class PhysicsWorld
         {
             if(tmp_player.getMovingTowards() == Player.Side.LEFT)
             {
-                if(checkIfPointCollides(pe2, new Vector2f(tmp_player.getPosition().getX()-16.f, tmp_player.getPosition().getY()+(tmp_player.getHeight()*2/5))) ||
-                        checkIfPointCollides(pe2, new Vector2f(tmp_player.getPosition().getX()-16.f, tmp_player.getPosition().getY()+(tmp_player.getHeight()*4/5))))
+                if(checkIfPointCollides(pe2, new Vector2f(tmp_player.getPosition().getX()-8.f, tmp_player.getPosition().getY()+(tmp_player.getHeight()*2/5))) ||
+                        checkIfPointCollides(pe2, new Vector2f(tmp_player.getPosition().getX()-8.f, tmp_player.getPosition().getY()+(tmp_player.getHeight()*4/5))))
                 {
                     tmp_player.setCanLift(true, pe2);
                     //this.liftedBox.setDynamic(false);
@@ -205,8 +205,8 @@ public class PhysicsWorld
 
             if(tmp_player.getMovingTowards() == Player.Side.RIGHT)
             {
-                if(checkIfPointCollides(pe2, new Vector2f(tmp_player.getPosition().getX()+tmp_player.getWidth()+16.f, tmp_player.getPosition().getY()+(tmp_player.getHeight()*2/5))) ||
-                        checkIfPointCollides(pe2, new Vector2f(tmp_player.getPosition().getX()+tmp_player.getWidth()+16.f, tmp_player.getPosition().getY()+(tmp_player.getHeight()*4/5))))
+                if(checkIfPointCollides(pe2, new Vector2f(tmp_player.getPosition().getX()+tmp_player.getWidth()+8.f, tmp_player.getPosition().getY()+(tmp_player.getHeight()*2/5))) ||
+                        checkIfPointCollides(pe2, new Vector2f(tmp_player.getPosition().getX()+tmp_player.getWidth()+8.f, tmp_player.getPosition().getY()+(tmp_player.getHeight()*4/5))))
                 {
                     tmp_player.setCanLift(true, pe2);
                     //this.liftedBox.setDynamic(false);

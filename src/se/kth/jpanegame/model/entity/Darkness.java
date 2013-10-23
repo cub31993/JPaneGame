@@ -64,22 +64,31 @@ public class Darkness {
                     {
                         this.image.setRGB(i,j, new Color(0,0,0,1.0f).getRGB());
                         //float alpha = (float)Math.hypot(Math.abs(this.rectangles[i][j].getX() - 400), Math.abs(this.rectangles[i][j].getY()-300))/300;
-                        //System.out.println("Darkness alpha ["+i+"]["+j+"]: "+1);
+                        //System.out.println("Darkness alpha ["+i+"]["+j+"]: "+1);                                              t
                     }*/
 
                     for(Entity light:lights)
                     {
                         Light tmp_light = (Light)light;
-                        if(light.getPosition().getX() > 0 && light.getPosition().getX() < this.width)
+                        if(light.getPosition().getX() > -400 && light.getPosition().getX() < this.width+400)
                         {
-                            if(light.getPosition().getY() > 0 && light.getPosition().getY() < this.height)
+                            if(light.getPosition().getY() > -400 && light.getPosition().getY() < this.height+400)
                             {
                                 float distance1 = (float)Math.hypot(Math.abs(j*this.rectangleSize - light.getPosition().getY()), Math.abs(i*this.rectangleSize-light.getPosition().getX()));
                                 float maxdistance = tmp_light.getSize()+(float)(Math.random()*50.f);
                                 if(distance1 < maxdistance)
                                 {
-                                    //g.setColor(new Color(0,0,0,distance/300));
-                                    this.image.setRGB(i,j, new Color(0.3f-0.3f*(distance1/maxdistance),.2f-.2f*(distance1/maxdistance),0,distance1/maxdistance).getRGB());
+                                    int color2 =this.image.getRGB(i,j);
+                                    Color color = new Color(color2);
+                                    int alpha = (color2 >> 24) & 0xFF;
+                                    if(color.getRed() != 0.0f)  //
+                                    {
+                                        this.image.setRGB(i,j, new Color(0.3f*(distance1/maxdistance),0.2f*(distance1/maxdistance), 0, 0.1f+(alpha/1024.f)).getRGB());
+                                    }
+                                    else
+                                    {
+                                        this.image.setRGB(i,j, new Color(0.3f-0.3f*(distance1/maxdistance),.2f-.2f*(distance1/maxdistance),0,distance1/maxdistance).getRGB());
+                                    }
                                 }
 
                             }
